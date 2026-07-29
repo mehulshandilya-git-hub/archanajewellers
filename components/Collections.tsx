@@ -13,16 +13,40 @@ const collections = [
     gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
   },
   {
-    title: "Gold Rings",
-    slug: getCategorySlug("Gold Rings"),
+    title: "Earrings",
+    slug: getCategorySlug("Earrings"),
+    span: "md:col-span-2",
+    gradient: "from-yellow-900/20 via-yellow-600/10 to-transparent",
+  },
+  {
+    title: "Fancy Tops",
+    slug: getCategorySlug("Fancy Tops"),
+    span: "",
+    gradient: "from-purple-900/20 via-purple-700/10 to-transparent",
+  },
+  {
+    title: "Rings",
+    slug: getCategorySlug("Rings"),
     span: "",
     gradient: "from-orange-900/20 via-orange-700/10 to-transparent",
   },
   {
-    title: "Gold Earrings",
-    slug: getCategorySlug("Gold Earrings"),
+    title: "Lightweight Jewellery",
+    slug: getCategorySlug("Lightweight Jewellery"),
     span: "",
-    gradient: "from-yellow-900/20 via-yellow-600/10 to-transparent",
+    gradient: "from-stone-900/20 via-stone-700/10 to-transparent",
+  },
+  {
+    title: "Pendant",
+    slug: getCategorySlug("Pendant"),
+    span: "",
+    gradient: "from-red-900/20 via-red-700/10 to-transparent",
+  },
+  {
+    title: "Ear Studs for Men",
+    slug: getCategorySlug("Ear Studs for Men"),
+    span: "md:col-span-2",
+    gradient: "from-blue-900/20 via-blue-700/10 to-transparent",
   },
 ];
 

@@ -4,7 +4,7 @@ export const products: Product[] = [
   {
     id: "gp-002",
     name: "Diamond Gold Ring",
-    category: "Gold Rings",
+    category: "Rings",
     purity: "18K Gold",
     weight: "6.2g",
     price: 45000,
@@ -18,7 +18,7 @@ export const products: Product[] = [
   {
     id: "gp-007",
     name: "Gold Earrings Set",
-    category: "Gold Earrings",
+    category: "Earrings",
     purity: "22K Gold",
     weight: "9.2g",
     price: 52000,
@@ -31,7 +31,7 @@ export const products: Product[] = [
   {
     id: "gp-010",
     name: "Gold Ring Classic",
-    category: "Gold Rings",
+    category: "Rings",
     purity: "22K Gold",
     weight: "4.8g",
     price: 32000,
@@ -44,7 +44,7 @@ export const products: Product[] = [
   {
     id: "gp-018",
     name: "Gold Ring with Ruby",
-    category: "Gold Rings",
+    category: "Rings",
     purity: "22K Gold",
     weight: "5.6g",
     price: 38000,
@@ -57,7 +57,7 @@ export const products: Product[] = [
   {
     id: "gp-019",
     name: "Gold Couple Ring Set",
-    category: "Gold Rings",
+    category: "Rings",
     purity: "18K Gold",
     weight: "8.0g",
     price: 55000,
@@ -70,7 +70,7 @@ export const products: Product[] = [
   {
     id: "gp-020",
     name: "Gold Earrings Jhumka",
-    category: "Gold Earrings",
+    category: "Earrings",
     purity: "22K Gold",
     weight: "14.5g",
     price: 72000,
@@ -83,7 +83,7 @@ export const products: Product[] = [
   {
     id: "gp-021",
     name: "Gold Stud Earrings",
-    category: "Gold Earrings",
+    category: "Earrings",
     purity: "22K Gold",
     weight: "6.5g",
     price: 35000,
@@ -96,7 +96,7 @@ export const products: Product[] = [
   {
     id: "gp-022",
     name: "Gold Drop Earrings",
-    category: "Gold Earrings",
+    category: "Earrings",
     purity: "24K Gold",
     weight: "11.0g",
     price: 62000,
@@ -241,14 +241,22 @@ export const nosepinSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
-  { id: "gold-rings", name: "Gold Rings", slug: "gold-rings", count: 4 },
-  { id: "gold-earrings", name: "Gold Earrings", slug: "gold-earrings", count: 4 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 4 },
+  { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
+  { id: "rings", name: "Rings", slug: "rings", count: 4 },
+  { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 0 },
+  { id: "pendant", name: "Pendant", slug: "pendant", count: 0 },
+  { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
 ];
 
 export const categorySlugToName: Record<string, string> = {
   "gold-nosepins": "Nosepins",
-  "gold-rings": "Gold Rings",
-  "gold-earrings": "Gold Earrings",
+  "earrings": "Earrings",
+  "fancy-tops": "Fancy Tops",
+  "rings": "Rings",
+  "lightweight-jewellery": "Lightweight Jewellery",
+  "pendant": "Pendant",
+  "ear-studs-for-men": "Ear Studs for Men",
 };
 
 export function getProductById(id: string): Product | undefined {
