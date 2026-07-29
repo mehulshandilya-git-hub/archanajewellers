@@ -10,6 +10,7 @@ import {
   categorySlugToName,
   nosepinSubcategories,
   noseRingsSubcategories,
+  earringSubcategories,
   getProductsBySubcategory,
   formatPrice,
 } from "@/lib/products";
@@ -26,8 +27,9 @@ export default function CategoryPage() {
   const categoryProducts = products.filter((p) => p.category === categoryName);
   const isNosepins = slug === "gold-nosepins";
   const isNoseRings = slug === "nose-rings";
-  const hasSubcategories = isNosepins || isNoseRings;
-  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : [];
+  const isEarrings = slug === "earrings";
+  const hasSubcategories = isNosepins || isNoseRings || isEarrings;
+  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : isEarrings ? earringSubcategories : [];
   const filtered =
     hasSubcategories && activeSub
       ? getProductsBySubcategory(activeSub)

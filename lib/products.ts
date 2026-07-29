@@ -16,19 +16,6 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: "gp-007",
-    name: "Gold Earrings Set",
-    category: "Earrings",
-    purity: "22K Gold",
-    weight: "9.2g",
-    price: 52000,
-    description: "Contemporary gold earrings with a modern design language, perfect for both traditional and western outfits.",
-    details: ["22K Gold", "Weight: 9.2g", "Modern design", "Stud style", "Pair"],
-    images: [],
-    badge: "New",
-    inStock: true,
-  },
-  {
     id: "gp-010",
     name: "Gold Ring Classic",
     category: "Rings",
@@ -67,45 +54,7 @@ export const products: Product[] = [
     badge: "Best Seller",
     inStock: true,
   },
-  {
-    id: "gp-020",
-    name: "Gold Earrings Jhumka",
-    category: "Earrings",
-    purity: "22K Gold",
-    weight: "14.5g",
-    price: 72000,
-    description: "Traditional gold jhumka earrings with intricate filigree work, a timeless addition to any jewelry collection.",
-    details: ["22K Gold", "Total Weight: 14.5g", "Traditional jhumka style", "Filigree work", "Pair"],
-    images: [],
-    badge: "Handcrafted",
-    inStock: true,
-  },
-  {
-    id: "gp-021",
-    name: "Gold Stud Earrings",
-    category: "Earrings",
-    purity: "22K Gold",
-    weight: "6.5g",
-    price: 35000,
-    description: "Simple yet elegant gold stud earrings with a polished finish, perfect for everyday sophistication.",
-    details: ["22K Gold", "Weight: 6.5g", "Stud style", "Polished finish", "Pair"],
-    images: [],
-    badge: "",
-    inStock: true,
-  },
-  {
-    id: "gp-022",
-    name: "Gold Drop Earrings",
-    category: "Earrings",
-    purity: "24K Gold",
-    weight: "11.0g",
-    price: 62000,
-    description: "Graceful gold drop earrings with a delicate chain detail, adding a touch of elegance to any outfit.",
-    details: ["24K Gold", "Weight: 11.0g", "Drop style", "Chain detail", "Pair"],
-    images: [],
-    badge: "New",
-    inStock: true,
-  },
+
 
 
   // ── Nosepins Subcategory Products ──
@@ -252,9 +201,21 @@ export const noseRingsSubcategories = [
   { name: "Sania V cutting", slug: "sania-v-cutting", description: "V-cut design sania nose rings", image: "✦" },
 ];
 
+export const earringSubcategories = [
+  { name: "Die Chain Bali", slug: "die-chain-bali", description: "Die chain style bali earrings", image: "✦" },
+  { name: "Kundan Bali", slug: "kundan-bali", description: "Traditional kundan bali earrings", image: "✦" },
+  { name: "Plain Pipe Bali", slug: "plain-pipe-bali", description: "Plain pipe design bali earrings", image: "✦" },
+  { name: "Ball Bali", slug: "ball-bali", description: "Ball-style bali earrings", image: "✦" },
+  { name: "Kundal Bali", slug: "kundal-bali", description: "Traditional kundal bali earrings", image: "✦" },
+  { name: "New Design", slug: "new-design", description: "Latest design bali earrings", image: "✦" },
+  { name: "Bombay Fancy", slug: "bombay-fancy", description: "Fancy bombay-style bali earrings", image: "✦" },
+  { name: "Lock Bali", slug: "lock-bali", description: "Lock-style bali earrings", image: "✦" },
+  { name: "Rajkot Bali", slug: "rajkot-bali", description: "Rajkot-style bali earrings", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 4 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 4 },
