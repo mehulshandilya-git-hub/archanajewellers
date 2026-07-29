@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 import { useStore } from "@/lib/store";
 import { formatPrice } from "@/lib/products";
@@ -65,8 +66,12 @@ export default function WishlistDrawer({
                     key={product.id}
                     className="glass rounded-sm p-4 flex gap-4 items-center"
                   >
-                    <div className="w-16 h-16 rounded-sm bg-gradient-to-br from-luxury-gold/10 to-transparent flex items-center justify-center flex-shrink-0">
-                      <span className="text-xl text-luxury-gold/40">✦</span>
+                    <div className="w-16 h-16 rounded-sm bg-gradient-to-br from-luxury-gold/10 to-transparent flex items-center justify-center flex-shrink-0 overflow-hidden relative">
+                      {product.images && product.images[0] ? (
+                        <Image src={product.images[0]} alt={product.name} fill className="object-cover" sizes="64px" />
+                      ) : (
+                        <span className="text-xl text-luxury-gold/40">✦</span>
+                      )}
                     </div>
                     <div className="flex-1 min-w-0">
                       <h4 className="text-white text-sm font-heading truncate">

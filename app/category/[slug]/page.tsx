@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -200,14 +201,24 @@ export default function CategoryPage() {
                 >
                   <div className="relative overflow-hidden rounded-sm bg-secondary-bg border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500">
                     <Link href={`/product/${product.id}`}>
-                      <div className="aspect-square bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
-                        <motion.span
-                          className="text-5xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500"
-                          animate={{ opacity: [0.15, 0.35, 0.15] }}
-                          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                        >
-                          ✦
-                        </motion.span>
+                      <div className="aspect-square bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center overflow-hidden">
+                        {product.images && product.images[0] ? (
+                          <Image
+                            src={product.images[0]}
+                            alt={product.name}
+                            fill
+                            className="object-cover group-hover:scale-105 transition-transform duration-700"
+                            sizes="(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+                          />
+                        ) : (
+                          <motion.span
+                            className="text-5xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500"
+                            animate={{ opacity: [0.15, 0.35, 0.15] }}
+                            transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                          >
+                            ✦
+                          </motion.span>
+                        )}
                       </div>
                     </Link>
 

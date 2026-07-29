@@ -1,6 +1,7 @@
 "use client";
 
 import { useRef } from "react";
+import Image from "next/image";
 import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { products, formatPrice } from "@/lib/products";
@@ -25,14 +26,24 @@ function ProductCard({ productId, index }: { productId: string; index: number })
       >
         <Link href={`/product/${product.id}`}>
           <div className="relative aspect-square overflow-hidden">
-            <div className="w-full h-full bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
-              <motion.span
-                className="text-6xl text-luxury-gold/30"
-                animate={{ opacity: [0.2, 0.5, 0.2] }}
-                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-              >
-                ✦
-              </motion.span>
+            <div className="w-full h-full bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center relative">
+              {product.images && product.images[0] ? (
+                <Image
+                  src={product.images[0]}
+                  alt={product.name}
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 25vw"
+                />
+              ) : (
+                <motion.span
+                  className="text-6xl text-luxury-gold/30"
+                  animate={{ opacity: [0.2, 0.5, 0.2] }}
+                  transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  ✦
+                </motion.span>
+              )}
             </div>
             <div className="absolute inset-0 transition-transform duration-300"
               onMouseMove={(e) => {

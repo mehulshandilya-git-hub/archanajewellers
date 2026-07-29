@@ -1,6 +1,7 @@
 "use client";
 
 import { useParams } from "next/navigation";
+import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { getProductById, formatPrice, products } from "@/lib/products";
@@ -46,25 +47,35 @@ export default function ProductPage() {
         <div className="grid md:grid-cols-2 gap-8 md:gap-16">
           {/* Image */}
           <motion.div
-            className="aspect-square rounded-sm bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center border border-white/5"
+            className="aspect-square rounded-sm bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center border border-white/5 overflow-hidden relative"
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6 }}
           >
-            <div className="text-center">
-              <motion.div
-                className="text-8xl text-luxury-gold/20"
-                animate={{ opacity: [0.1, 0.3, 0.1], scale: [1, 1.05, 1] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              >
-                ✦
-              </motion.div>
-              {product.badge && (
-                <span className="inline-block mt-4 px-4 py-1.5 bg-luxury-gold/10 border border-luxury-gold/30 text-luxury-gold text-xs tracking-wider rounded-sm font-body">
-                  {product.badge}
-                </span>
-              )}
-            </div>
+            {product.images && product.images[0] ? (
+              <Image
+                src={product.images[0]}
+                alt={product.name}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 50vw"
+              />
+            ) : (
+              <div className="text-center">
+                <motion.div
+                  className="text-8xl text-luxury-gold/20"
+                  animate={{ opacity: [0.1, 0.3, 0.1], scale: [1, 1.05, 1] }}
+                  transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+                >
+                  ✦
+                </motion.div>
+                {product.badge && (
+                  <span className="inline-block mt-4 px-4 py-1.5 bg-luxury-gold/10 border border-luxury-gold/30 text-luxury-gold text-xs tracking-wider rounded-sm font-body">
+                    {product.badge}
+                  </span>
+                )}
+              </div>
+            )}
           </motion.div>
 
           {/* Info */}
@@ -155,8 +166,18 @@ export default function ProductPage() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {related.map((p) => (
                 <Link key={p.id} href={`/product/${p.id}`} className="group">
-                  <div className="aspect-square rounded-sm bg-gradient-to-br from-secondary-bg to-primary-bg flex items-center justify-center border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500 mb-3">
-                    <span className="text-3xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500">✦</span>
+                  <div className="aspect-square rounded-sm bg-gradient-to-br from-secondary-bg to-primary-bg flex items-center justify-center border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500 mb-3 overflow-hidden relative">
+                    {p.images && p.images[0] ? (
+                      <Image
+                        src={p.images[0]}
+                        alt={p.name}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-700"
+                        sizes="(max-width: 768px) 50vw, 25vw"
+                      />
+                    ) : (
+                      <span className="text-3xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500">✦</span>
+                    )}
                   </div>
                   <h3 className="text-white text-sm font-heading truncate group-hover:text-luxury-gold transition-colors">{p.name}</h3>
                   <p className="text-luxury-gold text-xs mt-1 font-body">{formatPrice(p.price)}</p>
