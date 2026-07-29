@@ -25,19 +25,12 @@ export default function About() {
         >
           {/* Left - Image */}
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
+            <img
+              src="/est bgp.jpeg"
+              alt="ARCHANA JEWELERS - Established in Bhagalpur"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
             <div className="absolute inset-0 bg-gradient-to-br from-luxury-gold/5 to-transparent" />
-            <div className="w-full h-full bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
-              <motion.div
-                className="text-center"
-                animate={{ opacity: [0.4, 0.8, 0.4] }}
-                transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              >
-                <div className="text-6xl mb-4">✦</div>
-                <p className="text-luxury-gold/40 text-sm tracking-widest uppercase font-body">
-                  Since Generations
-                </p>
-              </motion.div>
-            </div>
             {/* Glass overlay */}
             <div className="absolute bottom-0 left-0 right-0 p-4 glass-gold m-4 rounded-sm">
               <p className="text-champagne text-xs tracking-wider font-body">
