@@ -13,12 +13,6 @@ const collections = [
     gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
   },
   {
-    title: "Bridal Jewellery",
-    slug: getCategorySlug("Bridal Jewellery"),
-    span: "md:col-span-2",
-    gradient: "from-rose-900/20 via-rose-700/10 to-transparent",
-  },
-  {
     title: "Gold Rings",
     slug: getCategorySlug("Gold Rings"),
     span: "",

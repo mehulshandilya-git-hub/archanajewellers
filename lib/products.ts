@@ -16,20 +16,6 @@ export const products: Product[] = [
     inStock: true,
   },
   {
-    id: "gp-003",
-    name: "Bridal Gold Necklace",
-    category: "Bridal Jewellery",
-    purity: "24K Gold",
-    weight: "35.0g",
-    price: 245000,
-    description: "Magnificent bridal gold necklace set with traditional temple-inspired craftsmanship, designed for your special day.",
-    details: ["24K Pure Gold", "Weight: 35.0g", "Temple Design", "Matching earrings available", "BIS Hallmarked"],
-    images: [],
-    badge: "Premium",
-    inStock: true,
-  },
-
-  {
     id: "gp-007",
     name: "Gold Earrings Set",
     category: "Gold Earrings",
@@ -53,19 +39,6 @@ export const products: Product[] = [
     details: ["22K Yellow Gold", "Weight: 4.8g", "Classic design", "Comfort fit", "Hallmarked"],
     images: [],
     badge: "",
-    inStock: true,
-  },
-  {
-    id: "gp-011",
-    name: "Bridal Gold Bangles",
-    category: "Bridal Jewellery",
-    purity: "24K Gold",
-    weight: "52.0g",
-    price: 375000,
-    description: "Traditional bridal gold bangles set with intricate kundan work, a treasured heirloom for generations.",
-    details: ["24K Pure Gold", "Total Weight: 52.0g", "Kundan work", "Set of 4", "Bridal collection"],
-    images: [],
-    badge: "Exclusive",
     inStock: true,
   },
   {
@@ -134,45 +107,7 @@ export const products: Product[] = [
     inStock: true,
   },
 
-  {
-    id: "gp-026",
-    name: "Bridal Gold Earring Set",
-    category: "Bridal Jewellery",
-    purity: "24K Gold",
-    weight: "22.0g",
-    price: 175000,
-    description: "Exquisite bridal gold earring set with kundan and polki work, designed to make you shine on your special day.",
-    details: ["24K Gold", "Weight: 22.0g", "Kundan & polki work", "Bridal design", "Pair with screw back"],
-    images: [],
-    badge: "Exclusive",
-    inStock: true,
-  },
-  {
-    id: "gp-027",
-    name: "Bridal Gold Mang tikka",
-    category: "Bridal Jewellery",
-    purity: "22K Gold",
-    weight: "18.0g",
-    price: 125000,
-    description: "Traditional gold mang tikka with pearl drops, an essential bridal accessory that completes the wedding look.",
-    details: ["22K Gold", "Weight: 18.0g", "Pearl drops", "Traditional design", "Adjustable chain"],
-    images: [],
-    badge: "Handcrafted",
-    inStock: true,
-  },
-  {
-    id: "gp-028",
-    name: "Gold Bridal Nose Ring",
-    category: "Bridal Jewellery",
-    purity: "24K Gold",
-    weight: "5.0g",
-    price: 38000,
-    description: "Premium bridal gold nose ring with chain, a statement piece for the wedding day and beyond.",
-    details: ["24K Gold", "Weight: 5.0g", "With chain", "Bridal design", "QR Verified"],
-    images: [],
-    badge: "Limited Edition",
-    inStock: true,
-  },
+
   // ── Nosepins Subcategory Products ──
   {
     id: "np-001", name: "Exclusive Stone Gold Nosepin", category: "Nosepins", subcategory: "Exclusive Stone",
@@ -306,14 +241,12 @@ export const nosepinSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
-  { id: "bridal-jewellery", name: "Bridal Jewellery", slug: "bridal-jewellery", count: 5 },
   { id: "gold-rings", name: "Gold Rings", slug: "gold-rings", count: 4 },
   { id: "gold-earrings", name: "Gold Earrings", slug: "gold-earrings", count: 4 },
 ];
 
 export const categorySlugToName: Record<string, string> = {
   "gold-nosepins": "Nosepins",
-  "bridal-jewellery": "Bridal Jewellery",
   "gold-rings": "Gold Rings",
   "gold-earrings": "Gold Earrings",
 };
