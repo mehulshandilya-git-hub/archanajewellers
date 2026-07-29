@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { getCategorySlug } from "@/lib/products";
 
@@ -11,6 +12,7 @@ const collections = [
     slug: getCategorySlug("Nosepins"),
     span: "md:col-span-2 md:row-span-2",
     gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
+    image: "/nosepins/nosepins-category.jpeg",
   },
   {
     title: "Earrings",
@@ -60,7 +62,7 @@ function CollectionCard({
   item,
   index,
 }: {
-  item: (typeof collections)[0];
+  item: (typeof collections)[0] & { image?: string };
   index: number;
 }) {
   return (
@@ -72,6 +74,9 @@ function CollectionCard({
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6, delay: index * 0.1 }}
       >
+        {item.image && (
+          <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
+        )}
         <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient}`} />
         <div className="absolute inset-0 bg-secondary-bg/60 backdrop-blur-[1px]" />
         <div className="absolute top-0 left-0 w-12 h-[1px] bg-luxury-gold/40 group-hover:w-full transition-all duration-700" />
