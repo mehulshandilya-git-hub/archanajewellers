@@ -2,20 +2,6 @@ import { Product } from "./types";
 
 export const products: Product[] = [
   {
-    id: "gp-002",
-    name: "Diamond Gold Ring",
-    category: "Rings",
-    purity: "18K Gold",
-    weight: "6.2g",
-    price: 45000,
-    originalPrice: 52000,
-    description: "Elegant diamond-studded gold ring with a classic solitaire setting, perfect for engagements and special occasions.",
-    details: ["18K White Gold", "Diamond: 0.5ct", "Weight: 6.2g", "Hallmarked", "Comes with certificate"],
-    images: [],
-    badge: "Sale",
-    inStock: true,
-  },
-  {
     id: "gp-010",
     name: "Gold Ring Classic",
     category: "Rings",
@@ -28,32 +14,7 @@ export const products: Product[] = [
     badge: "",
     inStock: true,
   },
-  {
-    id: "gp-018",
-    name: "Gold Ring with Ruby",
-    category: "Rings",
-    purity: "22K Gold",
-    weight: "5.6g",
-    price: 38000,
-    description: "Stunning gold ring set with a natural ruby gemstone, combining vibrant color with timeless gold.",
-    details: ["22K Gold", "Weight: 5.6g", "Ruby: 0.8ct", "Hallmarked", "Adjustable size"],
-    images: [],
-    badge: "",
-    inStock: true,
-  },
-  {
-    id: "gp-019",
-    name: "Gold Couple Ring Set",
-    category: "Rings",
-    purity: "18K Gold",
-    weight: "8.0g",
-    price: 55000,
-    description: "Matching couple gold ring set with minimalist design, perfect for engagements and anniversaries.",
-    details: ["18K Gold", "Total Weight: 8.0g (pair)", "Pair of 2", "Minimalist design", "Comes in gift box"],
-    images: [],
-    badge: "Best Seller",
-    inStock: true,
-  },
+
 
 
 
@@ -230,12 +191,17 @@ export const pendantSubcategories = [
   { name: "Mangalsutra", slug: "mangalsutra", description: "Traditional mangalsutra designs", image: "✦" },
 ];
 
+export const ringSubcategories = [
+  { name: "Gents Ring", slug: "gents-ring", description: "Premium rings for men", image: "✦" },
+  { name: "Ladies Ring", slug: "ladies-ring", description: "Elegant rings for women", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
-  { id: "rings", name: "Rings", slug: "rings", count: 4 },
+  { id: "rings", name: "Rings", slug: "rings", count: 0 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 0 },
   { id: "pendant", name: "Pendant", slug: "pendant", count: 0 },
   { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
