@@ -28,7 +28,6 @@ export function AuthProvider({ children }: { children: ReactNode }) {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    if (!auth) { setLoading(false); return; }
     const unsub = onAuthStateChanged(auth, (u) => {
       setUser(u);
       setLoading(false);
@@ -36,12 +35,10 @@ export function AuthProvider({ children }: { children: ReactNode }) {
     return unsub;
   }, []);
 
-  const noop = async () => { throw new Error("Firebase not configured."); };
-
-  const loginEmail = auth ? async (e: string, p: string) => { await signInWithEmailAndPassword(auth as any, e, p); } : noop;
-  const signupEmail = auth ? async (e: string, p: string) => { await createUserWithEmailAndPassword(auth as any, e, p); } : noop;
-  const loginGoogle = auth ? async () => { await signInWithPopup(auth as any, new GoogleAuthProvider()); } : noop;
-  const logout = auth ? async () => { await signOut(auth as any); } : noop;
+  const loginEmail = async (e: string, p: string) => { await signInWithEmailAndPassword(auth, e, p); };
+  const signupEmail = async (e: string, p: string) => { await createUserWithEmailAndPassword(auth, e, p); };
+  const loginGoogle = async () => { await signInWithPopup(auth, new GoogleAuthProvider()); };
+  const logout = async () => { await signOut(auth); };
 
   return (
     <AuthContext.Provider value={{ user, loading, loginEmail, signupEmail, loginGoogle, logout }}>

@@ -101,8 +101,8 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   const userId = user?.uid;
 
   useEffect(() => {
-    if (!userId || !db) return;
-    const ref = doc(db as any, "user-data", userId);
+    if (!userId) return;
+    const ref = doc(db, "user-data", userId);
     getDoc(ref).then((snap) => {
       if (snap.exists()) {
         const data = snap.data() as StoreState;
@@ -114,9 +114,9 @@ export function StoreProvider({ children }: { children: ReactNode }) {
   }, [userId]);
 
   useEffect(() => {
-    if (!userId || !db) return;
+    if (!userId) return;
     const timer = setTimeout(() => {
-      setDoc(doc(db as any, "user-data", userId), { cart: state.cart, wishlist: state.wishlist });
+      setDoc(doc(db, "user-data", userId), { cart: state.cart, wishlist: state.wishlist });
     }, 500);
     return () => clearTimeout(timer);
   }, [state.cart, state.wishlist, userId]);
