@@ -18,12 +18,76 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Quick Links */}
+          <div>
+            <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
+              Quick Links
+            </h4>
+            <ul className="space-y-3">
+              {["Home", "Collections", "About", "Contact"].map((link) => (
+                <li key={link}>
+                  <a
+                    href={link === "Home" ? "#" : `#${link.toLowerCase()}`}
+                    className="text-light-gray text-sm hover:text-luxury-gold transition-all duration-300 font-body font-light"
+                  >
+                    {link}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Collections */}
+          <div>
+            <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
+              Collections
+            </h4>
+            <ul className="space-y-3">
+              {[
+                "Nosepins",
+                "Earrings",
+                "Nose Rings",
+                "Rings",
+                "Pendant",
+              ].map((item) => (
+                <li key={item}>
+                  <a
+                    href="#collections"
+                    className="text-light-gray text-sm hover:text-luxury-gold transition-all duration-300 font-body font-light"
+                  >
+                    {item}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* Contact */}
+          <div>
+            <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
+              Contact
+            </h4>
+            <ul className="space-y-3 text-light-gray text-sm font-body font-light">
+              <li>DN Singh Rd, Near Devendra</li>
+              <li>Jalpan Hotel, Goshalla,</li>
+              <li>Bhagalpur, Bihar 812001</li>
+              <li>
+                <a
+                  href="tel:+917827659049"
+                  className="hover:text-luxury-gold transition-colors"
+                >
+                  +91 78276 59049
+                </a>
+              </li>
+            </ul>
+          </div>
+
           {/* Working Hours */}
-          <div className="md:col-span-2 lg:col-span-3">
+          <div>
             <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
               Working Hours
             </h4>
-            <p className="text-luxury-gold/80 font-heading text-lg">
+            <p className="text-luxury-gold/80 font-heading text-base">
               Mon to Sat 11:30 to 8 pm
             </p>
           </div>
