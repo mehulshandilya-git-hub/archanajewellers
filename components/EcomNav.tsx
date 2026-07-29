@@ -36,6 +36,7 @@ export default function EcomNav() {
           <nav className="hidden md:flex items-center gap-8">
             <a href="#" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Home</a>
             <a href="#collections" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Collections</a>
+            <a href="/category/gold-nosepins" className="text-luxury-gold text-sm tracking-wider transition-colors font-body">Shop</a>
             <a href="#store" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Store</a>
             <a href="#contact" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Contact</a>
           </nav>
