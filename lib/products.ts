@@ -196,6 +196,10 @@ export const ringSubcategories = [
   { name: "Ladies Ring", slug: "ladies-ring", description: "Elegant rings for women", image: "✦" },
 ];
 
+export const earStudsSubcategories = [
+  { name: "Gents Tops", slug: "gents-tops", description: "Stylish ear tops for men", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
