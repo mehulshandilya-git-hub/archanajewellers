@@ -4,6 +4,7 @@ import { ReactNode } from "react";
 import { StoreProvider } from "@/lib/store";
 import { ToastProvider } from "@/components/Toast";
 import EcomNav from "@/components/EcomNav";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Providers({ children }: { children: ReactNode }) {
   return (
@@ -11,6 +12,7 @@ export default function Providers({ children }: { children: ReactNode }) {
       <ToastProvider>
         <EcomNav />
         {children}
+        <WhatsAppButton />
       </ToastProvider>
     </StoreProvider>
   );
