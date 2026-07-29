@@ -34,12 +34,16 @@ export const products: Product[] = [
     images: [], badge: "Best Seller", inStock: true,
   },
   {
-    id: "np-003", name: "Teen Patti Gold Nosepin", category: "Nosepins", subcategory: "Teen Patti",
-    purity: "22K Gold", weight: "3.0g", price: 19500,
-    description: "Traditional teen patti gold nosepin with three-leaf design, a timeless classic.",
-    details: ["22K Gold", "Weight: 3.0g", "Teen patti design", "QR Verified", "Traditional"],
-    images: [], badge: "Traditional", inStock: true,
+    id: "tp-001", name: "Teen Patti Gold Classic", category: "Nosepins", subcategory: "Teen Patti",
+    purity: "22K Gold", weight: "2.2g", price: 3500,
+    description: "Classic teen patti gold nosepin with traditional three-leaf design.",
+    details: ["22K Gold", "Weight: 2.2g", "Teen patti design", "QR Verified"],
+    images: ["/nosepins/teen-patti/1.jpeg"], badge: "Traditional", inStock: true,
   },
+  { id: "tp-002", name: "Teen Patti Designer", category: "Nosepins", subcategory: "Teen Patti", purity: "22K Gold", weight: "2.5g", price: 4200, description: "Designer teen patti nosepin with modern styling.", details: ["22K Gold", "Weight: 2.5g", "Designer finish", "QR Verified"], images: ["/nosepins/teen-patti/2.jpeg"], badge: "", inStock: true },
+  { id: "tp-003", name: "Teen Patti Diamond Cut", category: "Nosepins", subcategory: "Teen Patti", purity: "22K Gold", weight: "2.8g", price: 5100, description: "Diamond cut teen patti nosepin with brilliant shine.", details: ["22K Gold", "Weight: 2.8g", "Diamond cut", "QR Verified"], images: ["/nosepins/teen-patti/3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "tp-004", name: "Teen Patti Fancy", category: "Nosepins", subcategory: "Teen Patti", purity: "24K Gold", weight: "2.3g", price: 3800, description: "Fancy teen patti nosepin with enhanced detailing.", details: ["24K Gold", "Weight: 2.3g", "Fancy design", "QR Verified"], images: ["/nosepins/teen-patti/4.jpeg"], badge: "New", inStock: true },
+  { id: "tp-005", name: "Teen Patti Royal", category: "Nosepins", subcategory: "Teen Patti", purity: "22K Gold", weight: "2.6g", price: 4600, description: "Royal teen patti nosepin with premium gold finish.", details: ["22K Gold", "Weight: 2.6g", "Royal design", "QR Verified"], images: ["/nosepins/teen-patti/5.jpeg"], badge: "Trending", inStock: true },
   {
     id: "np-004", name: "J Style Gold Nosepin", category: "Nosepins", subcategory: "J Style Nosepin",
     purity: "22K Gold", weight: "2.0g", price: 15000,
@@ -172,13 +176,7 @@ export const products: Product[] = [
     details: ["18K Gold", "Weight: 2.4g", "Diamond: 0.1ct", "QR Verified", "Comes with certificate"],
     images: [], badge: "Diamond", inStock: true,
   },
-  {
-    id: "np-016", name: "Teen Patti Fancy Nosepin", category: "Nosepins", subcategory: "Teen Patti",
-    purity: "22K Gold", weight: "3.5g", price: 22000,
-    description: "Fancy teen patti gold nosepin with enhanced detailing and a richer finish for special occasions.",
-    details: ["22K Gold", "Weight: 3.5g", "Fancy teen patti", "QR Verified", "Enhanced detailing"],
-    images: [], badge: "", inStock: true,
-  },
+
 ];
 
 export const nosepinSubcategories = [
@@ -249,7 +247,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 70 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 73 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
