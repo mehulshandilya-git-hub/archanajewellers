@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 import { useStore } from "@/lib/store";
 import { formatPrice } from "@/lib/products";
 
@@ -13,6 +14,7 @@ export default function CartDrawer({
 }) {
   const { state, removeFromCart, updateQuantity, clearCart, cartTotal } =
     useStore();
+  const router = useRouter();
 
   return (
     <AnimatePresence>
@@ -121,10 +123,19 @@ export default function CartDrawer({
                 </div>
                 <button
                   onClick={() => {
+                    onClose();
+                    router.push("/checkout");
+                  }}
+                  className="w-full py-4 bg-luxury-gold text-primary-bg rounded-full text-sm tracking-widest uppercase font-body font-semibold hover:shadow-[0_0_40px_rgba(212,175,55,0.3)] transition-all duration-500"
+                >
+                  Proceed to Checkout
+                </button>
+                <button
+                  onClick={() => {
                     clearCart();
                     onClose();
                   }}
-                  className="w-full py-4 bg-luxury-gold text-primary-bg rounded-full text-sm tracking-widest uppercase font-body font-semibold hover:shadow-[0_0_40px_rgba(212,175,55,0.3)] transition-all duration-500"
+                  className="w-full py-3 border border-white/10 text-light-gray hover:text-white rounded-full text-xs tracking-widest uppercase font-body transition-all"
                 >
                   Proceed to Enquiry
                 </button>
