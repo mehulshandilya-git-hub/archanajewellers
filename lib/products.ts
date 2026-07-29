@@ -239,6 +239,19 @@ export const nosepinSubcategories = [
   { name: "A-1 Huid Goli Keel", slug: "a-1-huid-goli-keel", description: "Premium goli design nosepins", image: "✦" },
 ];
 
+export const noseRingsSubcategories = [
+  { name: "Exclusive Chain Noserings", slug: "exclusive-chain-noserings", description: "Premium chain-style nose rings", image: "✦" },
+  { name: "Laxmi Nath", slug: "laxmi-nath", description: "Traditional Laxmi nath nose rings", image: "✦" },
+  { name: "Sania Nose Ring- Zig Zag", slug: "sania-nose-ring-zig-zag", description: "Zig zag design sania nose rings", image: "✦" },
+  { name: "Marathi Nath", slug: "marathi-nath", description: "Traditional Marathi-style nath", image: "✦" },
+  { name: "Teen Taar", slug: "teen-taar", description: "Three-wire design nose rings", image: "✦" },
+  { name: "Die Nathuni", slug: "die-nathuni", description: "Precision die-made nathuni", image: "✦" },
+  { name: "Sania Fancy Cutting", slug: "sania-fancy-cutting", description: "Fancy cutting sania nose rings", image: "✦" },
+  { name: "Sila Nath", slug: "sila-nath", description: "Traditional sila nath design", image: "✦" },
+  { name: "Sania Hand Made", slug: "sania-hand-made", description: "Handcrafted sania nose rings", image: "✦" },
+  { name: "Sania V cutting", slug: "sania-v-cutting", description: "V-cut design sania nose rings", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 4 },

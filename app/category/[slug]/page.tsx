@@ -9,6 +9,7 @@ import {
   getCategoryName,
   categorySlugToName,
   nosepinSubcategories,
+  noseRingsSubcategories,
   getProductsBySubcategory,
   formatPrice,
 } from "@/lib/products";
@@ -24,8 +25,11 @@ export default function CategoryPage() {
 
   const categoryProducts = products.filter((p) => p.category === categoryName);
   const isNosepins = slug === "gold-nosepins";
+  const isNoseRings = slug === "nose-rings";
+  const hasSubcategories = isNosepins || isNoseRings;
+  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : [];
   const filtered =
-    isNosepins && activeSub
+    hasSubcategories && activeSub
       ? getProductsBySubcategory(activeSub)
       : categoryProducts;
 
@@ -87,8 +91,8 @@ export default function CategoryPage() {
             <p className="text-light-gray text-sm mt-2 font-body">
               {activeSub
                 ? `${filtered.length} design${filtered.length === 1 ? "" : "s"} available`
-                : isNosepins
-                  ? `${nosepinSubcategories.length} subcategories`
+                : hasSubcategories
+                  ? `${subcategories.length} subcategories`
                   : `${categoryProducts.length} design${categoryProducts.length === 1 ? "" : "s"} available`}
             </p>
           </div>
@@ -113,10 +117,10 @@ export default function CategoryPage() {
           </div>
         </div>
 
-        {/* Nosepins: Subcategory grid */}
-        {isNosepins && !activeSub && (
+        {/* Subcategory grid */}
+        {hasSubcategories && !activeSub && (
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 mb-12">
-            {nosepinSubcategories.map((sub, i) => {
+            {subcategories.map((sub, i) => {
               const subProducts = getProductsBySubcategory(sub.name);
               return (
                 <motion.button
@@ -152,7 +156,7 @@ export default function CategoryPage() {
         )}
 
         {/* Active subcategory header */}
-        {isNosepins && activeSub && (
+        {hasSubcategories && activeSub && (
           <div className="mb-8">
             <button
               onClick={() => setActiveSub(null)}
@@ -163,8 +167,8 @@ export default function CategoryPage() {
           </div>
         )}
 
-        {/* Product grid - only show for non-nosepins or when a subcategory is active */}
-        {(!isNosepins || activeSub) && (
+        {/* Product grid - only show for categories without subcategories, or when a subcategory is active */}
+        {(!hasSubcategories || activeSub) && (
           <AnimatePresence mode="wait">
             <motion.div
               key={activeSub || "all"}
