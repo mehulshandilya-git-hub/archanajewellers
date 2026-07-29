@@ -213,6 +213,12 @@ export const earringSubcategories = [
   { name: "Rajkot Bali", slug: "rajkot-bali", description: "Rajkot-style bali earrings", image: "✦" },
 ];
 
+export const fancyTopSubcategories = [
+  { name: "Exclusive Tops", slug: "exclusive-tops", description: "Premium exclusive top designs", image: "✦" },
+  { name: "Designer Tops", slug: "designer-tops", description: "Designer-crafted fancy tops", image: "✦" },
+  { name: "Fancy Tops", slug: "fancy-tops-sub", description: "Trending fancy top styles", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
