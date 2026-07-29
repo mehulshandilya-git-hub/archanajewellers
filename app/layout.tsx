@@ -3,6 +3,7 @@ import { Cormorant_Garamond, Inter } from "next/font/google";
 import "./globals.css";
 import LoadingScreen from "@/components/LoadingScreen";
 import Cursor from "@/components/Cursor";
+import Providers from "./providers";
 
 const cormorant = Cormorant_Garamond({
   subsets: ["latin"],
@@ -53,7 +54,7 @@ export default function RootLayout({
       <body className="bg-primary-bg text-white font-body antialiased">
         <LoadingScreen />
         <Cursor />
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

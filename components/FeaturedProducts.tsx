@@ -1,134 +1,97 @@
 "use client";
 
 import { useRef } from "react";
+import Link from "next/link";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { products, formatPrice } from "@/lib/products";
+import { useStore } from "@/lib/store";
+import { useToast } from "@/components/Toast";
 
-const products = [
-  {
-    name: "Gold Nosepin Elegance",
-    purity: "22K Gold",
-    weight: "2.5g",
-    image: "✦",
-  },
-  {
-    name: "Bridal Gold Necklace",
-    purity: "24K Gold",
-    weight: "35.0g",
-    image: "✦",
-  },
-  {
-    name: "Diamond Gold Ring",
-    purity: "18K Gold",
-    weight: "6.2g",
-    image: "✦",
-  },
-  {
-    name: "Gold Bangle Set",
-    purity: "22K Gold",
-    weight: "28.0g",
-    image: "✦",
-  },
-  {
-    name: "Temple Earrings",
-    purity: "22K Gold",
-    weight: "12.8g",
-    image: "✦",
-  },
-  {
-    name: "Daily Wear Chain",
-    purity: "18K Gold",
-    weight: "8.5g",
-    image: "✦",
-  },
-];
-
-function ProductCard({
-  product,
-  index,
-}: {
-  product: (typeof products)[0];
-  index: number;
-}) {
-  const cardRef = useRef<HTMLDivElement>(null);
+function ProductCard({ productId, index }: { productId: string; index: number }) {
+  const product = products.find((p) => p.id === productId)!;
+  const { addToCart, toggleWishlist, isInWishlist } = useStore();
+  const { showToast } = useToast();
 
   return (
     <motion.div
-      ref={cardRef}
       className="relative min-w-[280px] md:min-w-[320px] flex-shrink-0 group"
       initial={{ opacity: 0, x: 50 }}
       whileInView={{ opacity: 1, x: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
     >
-      <div
-        className="relative overflow-hidden rounded-sm bg-secondary-bg border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500"
+      <div className="relative overflow-hidden rounded-sm bg-secondary-bg border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500"
         style={{ perspective: "1000px" }}
       >
-        {/* Image area */}
-        <div className="relative aspect-square overflow-hidden">
-          <div className="w-full h-full bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
-            <motion.span
-              className="text-6xl text-luxury-gold/30"
-              animate={{ opacity: [0.2, 0.5, 0.2] }}
-              transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-            >
-              {product.image}
-            </motion.span>
+        <Link href={`/product/${product.id}`}>
+          <div className="relative aspect-square overflow-hidden">
+            <div className="w-full h-full bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
+              <motion.span
+                className="text-6xl text-luxury-gold/30"
+                animate={{ opacity: [0.2, 0.5, 0.2] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+              >
+                ✦
+              </motion.span>
+            </div>
+            <div className="absolute inset-0 transition-transform duration-300"
+              onMouseMove={(e) => {
+                const rect = e.currentTarget.getBoundingClientRect();
+                const x = (e.clientX - rect.left) / rect.width - 0.5;
+                const y = (e.clientY - rect.top) / rect.height - 0.5;
+                e.currentTarget.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`;
+              }}
+              onMouseLeave={(e) => { e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg)"; }}
+            />
+            <motion.div className="absolute inset-0 opacity-0 group-hover:opacity-100"
+              style={{ background: "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.05) 35%, transparent 42%)", backgroundSize: "200% 100%" }}
+              whileHover={{ backgroundPosition: ["-200% 0", "200% 0"], transition: { duration: 0.8, ease: "easeInOut" } }}
+            />
+            <div className="absolute top-3 right-3 glass rounded-full px-3 py-1">
+              <span className="text-[10px] text-luxury-gold tracking-wider font-body">✓ QR Verified</span>
+            </div>
+            {product.badge && (
+              <div className="absolute top-3 left-3 glass rounded-full px-3 py-1">
+                <span className="text-[10px] text-luxury-gold tracking-wider font-body">{product.badge}</span>
+              </div>
+            )}
           </div>
+        </Link>
 
-          {/* 3D Hover lift */}
-          <div
-            className="absolute inset-0 transition-transform duration-300"
-            onMouseMove={(e) => {
-              const rect = e.currentTarget.getBoundingClientRect();
-              const x = (e.clientX - rect.left) / rect.width - 0.5;
-              const y = (e.clientY - rect.top) / rect.height - 0.5;
-              e.currentTarget.style.transform = `rotateY(${x * 10}deg) rotateX(${-y * 10}deg)`;
-            }}
-            onMouseLeave={(e) => {
-              e.currentTarget.style.transform = "rotateY(0deg) rotateX(0deg)";
-            }}
-          />
-
-          {/* Glass shine overlay */}
-          <motion.div
-            className="absolute inset-0 opacity-0 group-hover:opacity-100"
-            style={{
-              background:
-                "linear-gradient(105deg, transparent 30%, rgba(255,255,255,0.05) 35%, transparent 42%)",
-              backgroundSize: "200% 100%",
-            }}
-            whileHover={{
-              backgroundPosition: ["-200% 0", "200% 0"],
-              transition: { duration: 0.8, ease: "easeInOut" },
-            }}
-          />
-
-          {/* QR Badge */}
-          <div className="absolute top-3 right-3 glass rounded-full px-3 py-1">
-            <span className="text-[10px] text-luxury-gold tracking-wider font-body">
-              ✓ QR Verified
-            </span>
-          </div>
-        </div>
-
-        {/* Info */}
         <div className="p-5">
-          <h3 className="font-heading text-lg text-white mb-2 group-hover:text-luxury-gold transition-colors">
-            {product.name}
-          </h3>
+          <Link href={`/product/${product.id}`}>
+            <h3 className="font-heading text-lg text-white mb-1 group-hover:text-luxury-gold transition-colors">
+              {product.name}
+            </h3>
+          </Link>
+          <p className="text-luxury-gold text-sm font-heading mb-2">{formatPrice(product.price)}</p>
           <div className="flex items-center gap-4 text-sm text-light-gray font-body">
             <span>{product.purity}</span>
             <span className="w-[1px] h-3 bg-white/10" />
             <span>{product.weight}</span>
           </div>
-          <motion.button
-            className="mt-4 w-full py-3 rounded-sm border border-luxury-gold/30 text-luxury-gold text-xs tracking-widest uppercase font-body hover:bg-luxury-gold hover:text-primary-bg transition-all duration-500"
-            whileHover={{ scale: 1.02 }}
-            whileTap={{ scale: 0.98 }}
-          >
-            Enquire Now
-          </motion.button>
+          <div className="flex gap-2 mt-4">
+            <motion.button
+              onClick={() => { addToCart(product); showToast("Added to cart"); }}
+              className="flex-1 py-3 rounded-sm bg-luxury-gold text-primary-bg text-xs tracking-widest uppercase font-body font-semibold hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-500"
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              Add to Cart
+            </motion.button>
+            <motion.button
+              onClick={() => { toggleWishlist(product); showToast(isInWishlist(product.id) ? "Removed from wishlist" : "Added to wishlist"); }}
+              className={`px-3 py-3 rounded-sm border text-xs tracking-widest uppercase font-body transition-all duration-500 ${
+                isInWishlist(product.id)
+                  ? "border-luxury-gold text-luxury-gold bg-luxury-gold/10"
+                  : "border-luxury-gold/30 text-luxury-gold hover:bg-luxury-gold/10"
+              }`}
+              whileHover={{ scale: 1.02 }}
+              whileTap={{ scale: 0.98 }}
+            >
+              {isInWishlist(product.id) ? "♥" : "♡"}
+            </motion.button>
+          </div>
         </div>
       </div>
     </motion.div>
@@ -148,26 +111,20 @@ export default function FeaturedProducts() {
   return (
     <section ref={sectionRef} className="relative py-24 md:py-32 px-4 md:px-8">
       <div className="max-w-7xl mx-auto">
-        <motion.div
-          className="text-center mb-16"
-          style={{ opacity: titleOpacity, y: titleY }}
-        >
-          <p className="text-luxury-gold tracking-[0.3em] text-sm uppercase mb-4 font-body">
-            Featured Pieces
-          </p>
+        <motion.div className="text-center mb-16" style={{ opacity: titleOpacity, y: titleY }}>
+          <p className="text-luxury-gold tracking-[0.3em] text-sm uppercase mb-4 font-body">Featured Pieces</p>
           <h2 className="font-heading text-4xl md:text-5xl lg:text-6xl text-white">
             Premium <span className="text-gradient">Selection</span>
           </h2>
           <div className="w-12 h-[1px] bg-luxury-gold/50 mx-auto mt-6" />
         </motion.div>
 
-        {/* Horizontal carousel */}
-        <div className="flex gap-6 overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory scrollbar-none"
+        <div className="flex gap-6 overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {products.map((product, index) => (
-            <div key={product.name} className="snap-start">
-              <ProductCard product={product} index={index} />
+          {products.slice(0, 6).map((product, index) => (
+            <div key={product.id} className="snap-start">
+              <ProductCard productId={product.id} index={index} />
             </div>
           ))}
         </div>
