@@ -2,7 +2,6 @@
 
 import { useRef } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { getCategorySlug } from "@/lib/products";
 
@@ -66,7 +65,7 @@ function CollectionCard({
   index: number;
 }) {
   return (
-    <Link href={`/category/${item.slug}`} className={`relative group overflow-hidden rounded-sm ${item.span} min-h-[200px] md:min-h-[280px]`}>
+    <Link href={`/category/${item.slug}`} className={`relative group overflow-hidden rounded-sm ${item.span} min-h-[200px] md:min-h-[280px]`} style={item.image ? { backgroundImage: `url(${item.image})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}>
       <motion.div
         className="absolute inset-0"
         initial={{ opacity: 0, y: 50 }}
@@ -74,11 +73,8 @@ function CollectionCard({
         viewport={{ once: true, margin: "-50px" }}
         transition={{ duration: 0.6, delay: index * 0.1 }}
       >
-        {item.image && (
-          <Image src={item.image} alt={item.title} fill className="object-cover" sizes="(max-width: 768px) 100vw, 50vw" />
-        )}
         <div className={`absolute inset-0 bg-gradient-to-br ${item.gradient}`} />
-        <div className="absolute inset-0 bg-secondary-bg/60 backdrop-blur-[1px]" />
+        <div className="absolute inset-0 bg-primary-bg/40 backdrop-blur-[1px]" />
         <div className="absolute top-0 left-0 w-12 h-[1px] bg-luxury-gold/40 group-hover:w-full transition-all duration-700" />
         <div className="relative h-full flex flex-col justify-end p-6 md:p-8">
           <h3 className="font-heading text-xl md:text-2xl lg:text-3xl text-white group-hover:text-luxury-gold transition-colors duration-500">
