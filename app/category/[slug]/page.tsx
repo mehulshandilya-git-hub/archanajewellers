@@ -39,7 +39,7 @@ export default function CategoryPage() {
   const nextSlug =
     currentIndex < allSlugs.length - 1 ? allSlugs[currentIndex + 1] : null;
 
-  if (!categoryName || categoryProducts.length === 0) {
+  if (!categoryName || (categoryProducts.length === 0 && subcategories.length === 0)) {
     return (
       <div className="min-h-screen flex items-center justify-center">
         <div className="text-center">
