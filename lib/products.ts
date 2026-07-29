@@ -224,6 +224,12 @@ export const lightweightSubcategories = [
   { name: "Pendant Designs", slug: "pendant-designs", description: "Lightweight pendant designs", image: "✦" },
 ];
 
+export const pendantSubcategories = [
+  { name: "Pendant Set", slug: "pendant-set", description: "Elegant pendant sets", image: "✦" },
+  { name: "God Pendant", slug: "god-pendant", description: "Divine god pendants", image: "✦" },
+  { name: "Mangalsutra", slug: "mangalsutra", description: "Traditional mangalsutra designs", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
