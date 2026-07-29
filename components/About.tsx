@@ -26,7 +26,7 @@ export default function About() {
           {/* Left - Image */}
           <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
             <img
-              src="/est bgp.jpeg"
+              src="/est-bgp.jpeg"
               alt="ARCHANA JEWELERS - Established in Bhagalpur"
               className="absolute inset-0 w-full h-full object-cover"
             />
