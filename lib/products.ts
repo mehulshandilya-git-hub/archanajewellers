@@ -115,8 +115,22 @@ export const products: Product[] = [
     purity: "24K Gold", weight: "3.0g", price: 28000,
     description: "Deluxe exclusive stone gold nosepin with a larger stone setting, making a bold elegant statement.",
     details: ["24K Gold", "Weight: 3.0g", "Premium stone", "QR Verified", "Gift packaging"],
-    images: [], badge: "Limited Edition", inStock: true,
+    images: ["/nosepins/exclusive-stone/1.jpeg"], badge: "Limited Edition", inStock: true,
   },
+  { id: "es-001", name: "Bombay Fancy NosePin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.5g", price: 4500, description: "Stylish Bombay fancy nosepin with exclusive stone setting.", details: ["22K Gold", "Weight: 2.5g", "Exclusive stone", "QR Verified"], images: ["/nosepins/exclusive-stone/2.jpeg"], badge: "Trending", inStock: true },
+  { id: "es-002", name: "Ruby Designer Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.8g", price: 5200, description: "Elegant ruby designer nosepin with premium craftsmanship.", details: ["22K Gold", "Weight: 2.8g", "Ruby design", "QR Verified"], images: ["/nosepins/exclusive-stone/3.jpeg"], badge: "New", inStock: true },
+  { id: "es-003", name: "Exclusive Gold Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "24K Gold", weight: "2.2g", price: 3800, description: "Pure gold nosepin with a classic exclusive stone design.", details: ["24K Gold", "Weight: 2.2g", "Classic design", "QR Verified"], images: ["/nosepins/exclusive-stone/4.jpeg"], badge: "", inStock: true },
+  { id: "es-004", name: "Diamond Cut Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "3.0g", price: 5800, description: "Diamond cut nosepin with brilliant stone finish.", details: ["22K Gold", "Weight: 3.0g", "Diamond cut", "QR Verified"], images: ["/nosepins/exclusive-stone/5.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "es-005", name: "Pearl Stone Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.0g", price: 3500, description: "Beautiful pearl stone nosepin for everyday elegance.", details: ["22K Gold", "Weight: 2.0g", "Pearl stone", "QR Verified"], images: ["/nosepins/exclusive-stone/6.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "es-006", name: "Emerald Designer Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.6g", price: 4200, description: "Stunning emerald designer nosepin with fine detailing.", details: ["22K Gold", "Weight: 2.6g", "Emerald stone", "QR Verified"], images: ["/nosepins/exclusive-stone/7.jpeg"], badge: "", inStock: true },
+  { id: "es-007", name: "Sapphire Gold Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "24K Gold", weight: "2.4g", price: 5500, description: "Premium sapphire nosepin with a rich gold finish.", details: ["24K Gold", "Weight: 2.4g", "Sapphire stone", "QR Verified"], images: ["/nosepins/exclusive-stone/8.jpeg"], badge: "Premium", inStock: true },
+  { id: "es-008", name: "Gold Craft Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.1g", price: 3200, description: "Handcrafted gold nosepin with exclusive stone work.", details: ["22K Gold", "Weight: 2.1g", "Handcrafted", "QR Verified"], images: ["/nosepins/exclusive-stone/9.jpeg"], badge: "", inStock: true },
+  { id: "es-009", name: "Designer Stone Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.7g", price: 4800, description: "Contemporary designer stone nosepin for modern looks.", details: ["22K Gold", "Weight: 2.7g", "Designer stone", "QR Verified"], images: ["/nosepins/exclusive-stone/10.jpeg"], badge: "New", inStock: true },
+  { id: "es-010", name: "Luxury Gold Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "24K Gold", weight: "3.2g", price: 5000, description: "Luxury gold nosepin with an exclusive premium stone.", details: ["24K Gold", "Weight: 3.2g", "Premium finish", "QR Verified"], images: ["/nosepins/exclusive-stone/11.jpeg"], badge: "Premium", inStock: true },
+  { id: "es-011", name: "Bombay Fancy NosePin-2", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.3g", price: 4700, description: "Another stunning Bombay fancy nosepin design.", details: ["22K Gold", "Weight: 2.3g", "Fancy design", "QR Verified"], images: ["/nosepins/exclusive-stone/12.jpeg"], badge: "Trending", inStock: true },
+  { id: "es-012", name: "Ruby Designer Nosepin-2", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.9g", price: 5400, description: "Exquisite ruby designer nosepin with intricate work.", details: ["22K Gold", "Weight: 2.9g", "Ruby design", "QR Verified"], images: ["/nosepins/exclusive-stone/13.jpeg"], badge: "", inStock: true },
+  { id: "es-013", name: "Classic Stone Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.4g", price: 3900, description: "Timeless classic stone nosepin for any occasion.", details: ["22K Gold", "Weight: 2.4g", "Classic stone", "QR Verified"], images: ["/nosepins/exclusive-stone/14.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "es-014", name: "Gold Fashion Nosepin-1", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.5g", price: 4600, description: "Fashion-forward gold nosepin with exclusive stone.", details: ["22K Gold", "Weight: 2.5g", "Fashion design", "QR Verified"], images: ["/nosepins/exclusive-stone/15.jpeg"], badge: "", inStock: true },
   {
     id: "np-015", name: "Single Stone Diamond Nosepin", category: "Nosepins", subcategory: "Single Stone",
     purity: "18K Gold", weight: "2.4g", price: 32000,
@@ -201,7 +215,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 30 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
