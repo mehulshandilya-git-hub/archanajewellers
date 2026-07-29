@@ -1,6 +1,9 @@
 "use client";
 
 import { createContext, useContext, useReducer, useEffect, useCallback, ReactNode } from "react";
+import { doc, setDoc, getDoc } from "firebase/firestore";
+import { db } from "./firebase";
+import { useAuth } from "./auth";
 import { StoreState, StoreAction, CartItem, Product } from "./types";
 
 const initialState: StoreState = {
@@ -77,6 +80,7 @@ const StoreContext = createContext<StoreContextType | null>(null);
 
 export function StoreProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(storeReducer, initialState);
+  const { user } = useAuth();
 
   useEffect(() => {
     try {
@@ -93,6 +97,29 @@ export function StoreProvider({ children }: { children: ReactNode }) {
       localStorage.setItem("archana-store", JSON.stringify(state));
     } catch {}
   }, [state]);
+
+  const userId = user?.uid;
+
+  useEffect(() => {
+    if (!userId || !db) return;
+    const ref = doc(db as any, "user-data", userId);
+    getDoc(ref).then((snap) => {
+      if (snap.exists()) {
+        const data = snap.data() as StoreState;
+        if (data.cart?.length || data.wishlist?.length) {
+          dispatch({ type: "LOAD_STORAGE", payload: data });
+        }
+      }
+    });
+  }, [userId]);
+
+  useEffect(() => {
+    if (!userId || !db) return;
+    const timer = setTimeout(() => {
+      setDoc(doc(db as any, "user-data", userId), { cart: state.cart, wishlist: state.wishlist });
+    }, 500);
+    return () => clearTimeout(timer);
+  }, [state.cart, state.wishlist, userId]);
 
   const addToCart = useCallback((product: Product, quantity = 1) => {
     dispatch({ type: "ADD_TO_CART", payload: { product, quantity } });

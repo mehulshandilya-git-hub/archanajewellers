@@ -3,13 +3,17 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { useStore } from "@/lib/store";
+import { useAuth } from "@/lib/auth";
 import CartDrawer from "./CartDrawer";
 import WishlistDrawer from "./WishlistDrawer";
+import LoginModal from "./LoginModal";
 
 export default function EcomNav() {
   const { cartCount, wishlistCount } = useStore();
+  const { user } = useAuth();
   const [cartOpen, setCartOpen] = useState(false);
   const [wishlistOpen, setWishlistOpen] = useState(false);
+  const [loginOpen, setLoginOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
@@ -39,6 +43,7 @@ export default function EcomNav() {
             <a href="/category/gold-nosepins" className="text-luxury-gold text-sm tracking-wider transition-colors font-body">Shop</a>
             <a href="#store" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Store</a>
             <a href="#contact" className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">Contact</a>
+            <button onClick={() => setLoginOpen(true)} className="text-light-gray hover:text-luxury-gold text-sm tracking-wider transition-colors font-body">{user ? "Account" : "Login"}</button>
           </nav>
 
           <div className="flex items-center gap-4">
@@ -77,6 +82,7 @@ export default function EcomNav() {
 
       <CartDrawer open={cartOpen} onClose={() => setCartOpen(false)} />
       <WishlistDrawer open={wishlistOpen} onClose={() => setWishlistOpen(false)} />
+      <LoginModal open={loginOpen} onClose={() => setLoginOpen(false)} />
     </>
   );
 }
