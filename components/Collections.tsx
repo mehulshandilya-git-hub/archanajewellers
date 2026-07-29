@@ -7,7 +7,7 @@ import { getCategorySlug } from "@/lib/products";
 
 const collections = [
   {
-    title: "Nose Rings",
+    title: "Nosepins",
     slug: getCategorySlug("Nosepins"),
     span: "md:col-span-2 md:row-span-2",
     gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
@@ -17,6 +17,12 @@ const collections = [
     slug: getCategorySlug("Earrings"),
     span: "md:col-span-2",
     gradient: "from-yellow-900/20 via-yellow-600/10 to-transparent",
+  },
+  {
+    title: "Nose Rings",
+    slug: getCategorySlug("Nose Rings"),
+    span: "",
+    gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
   },
   {
     title: "Fancy Tops",

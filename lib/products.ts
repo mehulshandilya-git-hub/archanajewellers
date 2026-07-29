@@ -242,6 +242,7 @@ export const nosepinSubcategories = [
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 4 },
+  { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 4 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 0 },
@@ -252,6 +253,7 @@ export const categories = [
 export const categorySlugToName: Record<string, string> = {
   "gold-nosepins": "Nosepins",
   "earrings": "Earrings",
+  "nose-rings": "Nose Rings",
   "fancy-tops": "Fancy Tops",
   "rings": "Rings",
   "lightweight-jewellery": "Lightweight Jewellery",
