@@ -19,40 +19,16 @@ const collections = [
     gradient: "from-rose-900/20 via-rose-700/10 to-transparent",
   },
   {
-    title: "Gold Necklaces",
-    slug: getCategorySlug("Gold Necklaces"),
-    span: "",
-    gradient: "from-yellow-900/20 via-yellow-700/10 to-transparent",
-  },
-  {
     title: "Gold Rings",
     slug: getCategorySlug("Gold Rings"),
     span: "",
     gradient: "from-orange-900/20 via-orange-700/10 to-transparent",
   },
   {
-    title: "Gold Bangles",
-    slug: getCategorySlug("Gold Bangles"),
-    span: "md:col-span-2",
-    gradient: "from-amber-900/20 via-amber-600/10 to-transparent",
-  },
-  {
     title: "Gold Earrings",
     slug: getCategorySlug("Gold Earrings"),
     span: "",
     gradient: "from-yellow-900/20 via-yellow-600/10 to-transparent",
-  },
-  {
-    title: "Temple Jewellery",
-    slug: getCategorySlug("Temple Jewellery"),
-    span: "",
-    gradient: "from-red-900/20 via-red-700/10 to-transparent",
-  },
-  {
-    title: "Daily Wear Collection",
-    slug: getCategorySlug("Daily Wear"),
-    span: "md:col-span-2",
-    gradient: "from-stone-900/20 via-stone-700/10 to-transparent",
   },
 ];
 
