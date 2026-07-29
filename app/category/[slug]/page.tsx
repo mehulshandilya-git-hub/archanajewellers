@@ -163,96 +163,98 @@ export default function CategoryPage() {
           </div>
         )}
 
-        {/* Product grid */}
-        <AnimatePresence mode="wait">
-          <motion.div
-            key={activeSub || "all"}
-            className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
-          >
-            {filtered.map((product, index) => (
-              <motion.div
-                key={product.id}
-                className="group"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.4, delay: index * 0.05 }}
-              >
-                <div className="relative overflow-hidden rounded-sm bg-secondary-bg border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500">
-                  <Link href={`/product/${product.id}`}>
-                    <div className="aspect-square bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
-                      <motion.span
-                        className="text-5xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500"
-                        animate={{ opacity: [0.15, 0.35, 0.15] }}
-                        transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
-                      >
-                        ✦
-                      </motion.span>
-                    </div>
-                  </Link>
-
-                  {product.badge && (
-                    <span className="absolute top-2 left-2 px-2 py-0.5 glass text-[10px] text-luxury-gold rounded-sm font-body">
-                      {product.badge}
-                    </span>
-                  )}
-
-                  <div className="absolute top-2 right-2">
-                    <button
-                      onClick={() => {
-                        toggleWishlist(product);
-                        showToast(
-                          isInWishlist(product.id)
-                            ? "Removed"
-                            : "Added to wishlist"
-                        );
-                      }}
-                      className={`w-8 h-8 rounded-full flex items-center justify-center text-sm transition-all ${
-                        isInWishlist(product.id)
-                          ? "bg-luxury-gold text-primary-bg"
-                          : "glass text-light-gray hover:text-luxury-gold"
-                      }`}
-                    >
-                      {isInWishlist(product.id) ? "♥" : "♡"}
-                    </button>
-                  </div>
-
-                  <div className="p-4">
+        {/* Product grid - only show for non-nosepins or when a subcategory is active */}
+        {(!isNosepins || activeSub) && (
+          <AnimatePresence mode="wait">
+            <motion.div
+              key={activeSub || "all"}
+              className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              exit={{ opacity: 0, y: -20 }}
+              transition={{ duration: 0.3 }}
+            >
+              {filtered.map((product, index) => (
+                <motion.div
+                  key={product.id}
+                  className="group"
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.4, delay: index * 0.05 }}
+                >
+                  <div className="relative overflow-hidden rounded-sm bg-secondary-bg border border-white/5 group-hover:border-luxury-gold/30 transition-all duration-500">
                     <Link href={`/product/${product.id}`}>
-                      <h3 className="font-heading text-sm md:text-base text-white truncate group-hover:text-luxury-gold transition-colors">
-                        {product.name}
-                      </h3>
+                      <div className="aspect-square bg-gradient-to-br from-secondary-bg via-primary-bg to-secondary-bg flex items-center justify-center">
+                        <motion.span
+                          className="text-5xl text-luxury-gold/20 group-hover:text-luxury-gold/40 transition-all duration-500"
+                          animate={{ opacity: [0.15, 0.35, 0.15] }}
+                          transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                        >
+                          ✦
+                        </motion.span>
+                      </div>
                     </Link>
-                    <div className="flex items-center gap-2 mt-1 text-xs text-light-gray font-body">
-                      <span>{product.purity}</span>
-                      <span className="w-[1px] h-2 bg-white/10" />
-                      <span>{product.weight}</span>
-                    </div>
-                    <div className="flex items-center justify-between mt-3">
-                      <span className="font-heading text-base text-luxury-gold">
-                        {formatPrice(product.price)}
+
+                    {product.badge && (
+                      <span className="absolute top-2 left-2 px-2 py-0.5 glass text-[10px] text-luxury-gold rounded-sm font-body">
+                        {product.badge}
                       </span>
+                    )}
+
+                    <div className="absolute top-2 right-2">
+                      <button
+                        onClick={() => {
+                          toggleWishlist(product);
+                          showToast(
+                            isInWishlist(product.id)
+                              ? "Removed"
+                              : "Added to wishlist"
+                          );
+                        }}
+                        className={`w-8 h-8 rounded-full flex items-center justify-center text-sm transition-all ${
+                          isInWishlist(product.id)
+                            ? "bg-luxury-gold text-primary-bg"
+                            : "glass text-light-gray hover:text-luxury-gold"
+                        }`}
+                      >
+                        {isInWishlist(product.id) ? "♥" : "♡"}
+                      </button>
                     </div>
-                    <motion.button
-                      onClick={() => {
-                        addToCart(product);
-                        showToast("Added to cart");
-                      }}
-                      className="mt-3 w-full py-2.5 rounded-sm bg-luxury-gold text-primary-bg text-[10px] tracking-widest uppercase font-body font-semibold hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-500"
-                      whileHover={{ scale: 1.02 }}
-                      whileTap={{ scale: 0.98 }}
-                    >
-                      Add to Cart
-                    </motion.button>
+
+                    <div className="p-4">
+                      <Link href={`/product/${product.id}`}>
+                        <h3 className="font-heading text-sm md:text-base text-white truncate group-hover:text-luxury-gold transition-colors">
+                          {product.name}
+                        </h3>
+                      </Link>
+                      <div className="flex items-center gap-2 mt-1 text-xs text-light-gray font-body">
+                        <span>{product.purity}</span>
+                        <span className="w-[1px] h-2 bg-white/10" />
+                        <span>{product.weight}</span>
+                      </div>
+                      <div className="flex items-center justify-between mt-3">
+                        <span className="font-heading text-base text-luxury-gold">
+                          {formatPrice(product.price)}
+                        </span>
+                      </div>
+                      <motion.button
+                        onClick={() => {
+                          addToCart(product);
+                          showToast("Added to cart");
+                        }}
+                        className="mt-3 w-full py-2.5 rounded-sm bg-luxury-gold text-primary-bg text-[10px] tracking-widest uppercase font-body font-semibold hover:shadow-[0_0_30px_rgba(212,175,55,0.3)] transition-all duration-500"
+                        whileHover={{ scale: 1.02 }}
+                        whileTap={{ scale: 0.98 }}
+                      >
+                        Add to Cart
+                      </motion.button>
+                    </div>
                   </div>
-                </div>
-              </motion.div>
-            ))}
-          </motion.div>
-        </AnimatePresence>
+                </motion.div>
+              ))}
+            </motion.div>
+          </AnimatePresence>
+        )}
       </div>
     </main>
   );
