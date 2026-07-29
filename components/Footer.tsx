@@ -18,71 +18,14 @@ export default function Footer() {
             </p>
           </div>
 
-          {/* Quick Links */}
-          <div>
+          {/* Working Hours */}
+          <div className="md:col-span-2 lg:col-span-3">
             <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
-              Quick Links
+              Working Hours
             </h4>
-            <ul className="space-y-3">
-              {["Home", "Collections", "About", "Contact"].map((link) => (
-                <li key={link}>
-                  <a
-                    href={link === "Home" ? "#" : `#${link.toLowerCase()}`}
-                    className="text-light-gray text-sm hover:text-luxury-gold transition-all duration-300 font-body font-light"
-                  >
-                    {link}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Collections */}
-          <div>
-            <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
-              Collections
-            </h4>
-            <ul className="space-y-3">
-              {[
-                "Gold Nosepins",
-                "Bridal Jewellery",
-                "Gold Necklaces",
-                "Gold Rings",
-                "Gold Bangles",
-              ].map((item) => (
-                <li key={item}>
-                  <a
-                    href="#collections"
-                    className="text-light-gray text-sm hover:text-luxury-gold transition-all duration-300 font-body font-light"
-                  >
-                    {item}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Contact */}
-          <div>
-            <h4 className="text-white text-sm tracking-widest uppercase mb-5 font-body">
-              Contact
-            </h4>
-            <ul className="space-y-3 text-light-gray text-sm font-body font-light">
-              <li>DN Singh Rd, Near Devendra</li>
-              <li>Jalpan Hotel, Goshalla,</li>
-              <li>Bhagalpur, Bihar 812001</li>
-              <li>
-                <a
-                  href="tel:+917827659049"
-                  className="hover:text-luxury-gold transition-colors"
-                >
-                  +91 78276 59049
-                </a>
-              </li>
-              <li className="text-luxury-gold/80 text-xs pt-2 border-t border-white/5 mt-2">
-                Mon to Sat 11:30 to 8 pm
-              </li>
-            </ul>
+            <p className="text-luxury-gold/80 font-heading text-lg">
+              Mon to Sat 11:30 to 8 pm
+            </p>
           </div>
         </div>
 
