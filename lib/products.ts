@@ -45,12 +45,13 @@ export const products: Product[] = [
   { id: "tp-004", name: "Teen Patti Fancy", category: "Nosepins", subcategory: "Teen Patti", purity: "24K Gold", weight: "2.3g", price: 3800, description: "Fancy teen patti nosepin with enhanced detailing.", details: ["24K Gold", "Weight: 2.3g", "Fancy design", "QR Verified"], images: ["/nosepins/teen-patti/4.jpeg"], badge: "New", inStock: true },
   { id: "tp-005", name: "Teen Patti Royal", category: "Nosepins", subcategory: "Teen Patti", purity: "22K Gold", weight: "2.6g", price: 4600, description: "Royal teen patti nosepin with premium gold finish.", details: ["22K Gold", "Weight: 2.6g", "Royal design", "QR Verified"], images: ["/nosepins/teen-patti/5.jpeg"], badge: "Trending", inStock: true },
   {
-    id: "np-004", name: "J Style Gold Nosepin", category: "Nosepins", subcategory: "J Style Nosepin",
-    purity: "22K Gold", weight: "2.0g", price: 15000,
-    description: "Modern J-style gold nosepin with a sleek curved design, blending contemporary style with tradition.",
-    details: ["22K Gold", "Weight: 2.0g", "J-style design", "QR Verified", "Modern"],
-    images: [], badge: "New", inStock: true,
+    id: "js-001", name: "J Style Curved Gold", category: "Nosepins", subcategory: "J Style Nosepin",
+    purity: "22K Gold", weight: "2.0g", price: 3800,
+    description: "Modern J-style gold nosepin with a sleek curved design.",
+    details: ["22K Gold", "Weight: 2.0g", "J-style curved", "QR Verified"],
+    images: ["/nosepins/j-style-nosepin/1.jpeg"], badge: "New", inStock: true,
   },
+  { id: "js-002", name: "J Style Designer", category: "Nosepins", subcategory: "J Style Nosepin", purity: "22K Gold", weight: "2.3g", price: 4500, description: "Designer J-style nosepin with contemporary elegance.", details: ["22K Gold", "Weight: 2.3g", "Designer finish", "QR Verified"], images: ["/nosepins/j-style-nosepin/2.jpeg"], badge: "Trending", inStock: true },
   {
     id: "np-005", name: "Casting Gold Nosepin", category: "Nosepins", subcategory: "Casting Nosepins",
     purity: "18K Gold", weight: "2.5g", price: 14000,
@@ -247,7 +248,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 73 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 74 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
