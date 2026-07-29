@@ -2,6 +2,7 @@ export interface Product {
   id: string;
   name: string;
   category: string;
+  subcategory?: string;
   purity: string;
   weight: string;
   price: number;
@@ -11,6 +12,13 @@ export interface Product {
   images: string[];
   badge?: string;
   inStock: boolean;
+}
+
+export interface SubCategory {
+  name: string;
+  slug: string;
+  description: string;
+  image: string;
 }
 
 export interface CartItem {

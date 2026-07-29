@@ -7,7 +7,7 @@ import { getCategorySlug } from "@/lib/products";
 
 const collections = [
   {
-    title: "Exclusive Gold Nosepins",
+    title: "Nosepins",
     slug: getCategorySlug("Gold Nosepins"),
     span: "md:col-span-2 md:row-span-2",
     gradient: "from-amber-900/20 via-amber-700/10 to-transparent",
