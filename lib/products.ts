@@ -219,6 +219,11 @@ export const fancyTopSubcategories = [
   { name: "Fancy Tops", slug: "fancy-tops-sub", description: "Trending fancy top styles", image: "✦" },
 ];
 
+export const lightweightSubcategories = [
+  { name: "Modern Designer Rings", slug: "modern-designer-rings", description: "Lightweight modern designer rings", image: "✦" },
+  { name: "Pendant Designs", slug: "pendant-designs", description: "Lightweight pendant designs", image: "✦" },
+];
+
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 16 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },

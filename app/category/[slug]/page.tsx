@@ -12,6 +12,7 @@ import {
   noseRingsSubcategories,
   earringSubcategories,
   fancyTopSubcategories,
+  lightweightSubcategories,
   getProductsBySubcategory,
   formatPrice,
 } from "@/lib/products";
@@ -30,8 +31,9 @@ export default function CategoryPage() {
   const isNoseRings = slug === "nose-rings";
   const isEarrings = slug === "earrings";
   const isFancyTops = slug === "fancy-tops";
-  const hasSubcategories = isNosepins || isNoseRings || isEarrings || isFancyTops;
-  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : isEarrings ? earringSubcategories : isFancyTops ? fancyTopSubcategories : [];
+  const isLightweight = slug === "lightweight-jewellery";
+  const hasSubcategories = isNosepins || isNoseRings || isEarrings || isFancyTops || isLightweight;
+  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : isEarrings ? earringSubcategories : isFancyTops ? fancyTopSubcategories : isLightweight ? lightweightSubcategories : [];
   const filtered =
     hasSubcategories && activeSub
       ? getProductsBySubcategory(activeSub)
