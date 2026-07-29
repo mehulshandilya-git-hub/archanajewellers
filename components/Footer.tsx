@@ -79,6 +79,9 @@ export default function Footer() {
                   +91 78276 59049
                 </a>
               </li>
+              <li className="text-luxury-gold/80 text-xs pt-2 border-t border-white/5 mt-2">
+                Mon to Sat 11:30 to 8 pm
+              </li>
             </ul>
           </div>
         </div>
