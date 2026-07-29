@@ -154,20 +154,19 @@ export default function Hero() {
       ref={sectionRef}
       className="relative h-screen w-full overflow-hidden flex items-center justify-center"
     >
-      {/* Animated Background */}
-      <motion.div
-        className="absolute inset-0"
-        style={{ scale }}
-      >
-        <div className="absolute inset-0 bg-gradient-to-br from-[#060606] via-[#0a0a0a] to-[#111111]" />
-        {/* Subtle gold gradient orbs */}
-        <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-20"
-          style={{
-            background:
-              "radial-gradient(circle, rgba(212,175,55,0.15) 0%, transparent 60%)",
-          }}
-        />
-        <div className="absolute bottom-0 left-0 right-0 h-1/2 bg-gradient-to-t from-[#060606] to-transparent" />
+      {/* Video Background */}
+      <motion.div className="absolute inset-0" style={{ scale }}>
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        >
+          <source src="/bgv.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#060606]" />
       </motion.div>
 
       <FloatingParticles />
