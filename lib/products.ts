@@ -638,6 +638,11 @@ export const products: Product[] = [
   { id: "mdr-042", name: "Modern Designer Prestige", category: "Lightweight Jewellery", subcategory: "Modern Designer Rings", purity: "22K Gold", weight: "3.0g", price: 4800, description: "Stylish modern designer ring with premium gold finish.", details: ["22K Gold", "Weight: 3.0g", "Modern design", "QR Verified"], images: ["/lightweight-jewellery/modern-designer-rings/r42.jpeg"], badge: "Lightweight", inStock: true },
   { id: "mdr-043", name: "Modern Designer Harmony", category: "Lightweight Jewellery", subcategory: "Modern Designer Rings", purity: "22K Gold", weight: "3.2g", price: 5000, description: "Stylish modern designer ring with premium gold finish.", details: ["22K Gold", "Weight: 3.2g", "Modern design", "QR Verified"], images: ["/lightweight-jewellery/modern-designer-rings/r43.jpeg"], badge: "", inStock: true },
   { id: "mdr-044", name: "Modern Designer Classic", category: "Lightweight Jewellery", subcategory: "Modern Designer Rings", purity: "24K Gold", weight: "3.4g", price: 5200, description: "Classic modern designer ring with timeless appeal.", details: ["24K Gold", "Weight: 3.4g", "Modern design", "QR Verified"], images: ["/lightweight-jewellery/modern-designer-rings/r44.jpeg"], badge: "New", inStock: true },
+  { id: "pd-001", name: "Pendant Design Classic", category: "Lightweight Jewellery", subcategory: "Pendant Designs", purity: "24K Gold", weight: "3.0g", price: 3500, description: "Classic pendant design with timeless elegance.", details: ["24K Gold", "Weight: 3.0g", "Pendant design", "QR Verified"], images: ["/lightweight-jewellery/pendant-designs/p1.jpeg"], badge: "", inStock: true },
+  { id: "pd-002", name: "Pendant Design Designer", category: "Lightweight Jewellery", subcategory: "Pendant Designs", purity: "22K Gold", weight: "3.2g", price: 4200, description: "Designer pendant with intricate detailing.", details: ["22K Gold", "Weight: 3.2g", "Pendant design", "QR Verified"], images: ["/lightweight-jewellery/pendant-designs/p2.jpeg"], badge: "New", inStock: true },
+  { id: "pd-003", name: "Pendant Design Premium", category: "Lightweight Jewellery", subcategory: "Pendant Designs", purity: "22K Gold", weight: "3.5g", price: 5200, description: "Premium pendant design with superior craftsmanship.", details: ["22K Gold", "Weight: 3.5g", "Pendant design", "QR Verified"], images: ["/lightweight-jewellery/pendant-designs/p3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "pd-004", name: "Pendant Design Elegance", category: "Lightweight Jewellery", subcategory: "Pendant Designs", purity: "22K Gold", weight: "3.1g", price: 3800, description: "Elegant pendant design with graceful appeal.", details: ["22K Gold", "Weight: 3.1g", "Pendant design", "QR Verified"], images: ["/lightweight-jewellery/pendant-designs/p4.jpeg"], badge: "", inStock: true },
+  { id: "pd-005", name: "Pendant Design Fancy", category: "Lightweight Jewellery", subcategory: "Pendant Designs", purity: "24K Gold", weight: "3.3g", price: 4800, description: "Fancy pendant design with ornate style.", details: ["24K Gold", "Weight: 3.3g", "Pendant design", "QR Verified"], images: ["/lightweight-jewellery/pendant-designs/p5.jpeg"], badge: "Trending", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -708,7 +713,7 @@ export const categories = [
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 67 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
-  { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 44 },
+  { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 49 },
   { id: "pendant", name: "Pendant", slug: "pendant", count: 0 },
   { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
 ];
