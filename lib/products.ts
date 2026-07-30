@@ -502,6 +502,10 @@ export const products: Product[] = [
   { id: "ppb-013", name: "Plain Pipe Bali Star", category: "Earrings", subcategory: "Plain Pipe Bali", purity: "22K Gold", weight: "3.2g", price: 3500, description: "Star plain pipe bali earrings with subtle sparkle.", details: ["22K Gold", "Weight: 3.2g", "Plain pipe", "QR Verified"], images: ["/earrings/plain-pipe-bali/pp13.jpeg"], badge: "", inStock: true },
   { id: "ppb-014", name: "Plain Pipe Bali Grace", category: "Earrings", subcategory: "Plain Pipe Bali", purity: "24K Gold", weight: "3.0g", price: 3200, description: "Graceful plain pipe bali earrings with soft elegance.", details: ["24K Gold", "Weight: 3.0g", "Plain pipe", "QR Verified"], images: ["/earrings/plain-pipe-bali/pp14.jpeg"], badge: "Lightweight", inStock: true },
   { id: "ppb-015", name: "Plain Pipe Bali Heritage", category: "Earrings", subcategory: "Plain Pipe Bali", purity: "22K Gold", weight: "3.6g", price: 4600, description: "Heritage plain pipe bali earrings with timeless appeal.", details: ["22K Gold", "Weight: 3.6g", "Plain pipe", "QR Verified"], images: ["/earrings/plain-pipe-bali/pp15.jpeg"], badge: "Trending", inStock: true },
+  { id: "blb-001", name: "Ball Bali Classic", category: "Earrings", subcategory: "Ball Bali", purity: "24K Gold", weight: "2.8g", price: 3200, description: "Classic ball bali earrings with timeless round design.", details: ["24K Gold", "Weight: 2.8g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb1.jpeg"], badge: "", inStock: true },
+  { id: "blb-002", name: "Ball Bali Designer", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "3.0g", price: 3800, description: "Designer ball bali earrings with elegant detailing.", details: ["22K Gold", "Weight: 3.0g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb2.jpeg"], badge: "New", inStock: true },
+  { id: "blb-003", name: "Ball Bali Premium", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "3.2g", price: 4500, description: "Premium ball bali earrings with superior craftsmanship.", details: ["22K Gold", "Weight: 3.2g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "blb-004", name: "Ball Bali Fancy", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "2.9g", price: 3600, description: "Fancy ball bali earrings with stylish appeal.", details: ["22K Gold", "Weight: 2.9g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb4.jpeg"], badge: "Trending", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -574,7 +578,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 31 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 35 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
