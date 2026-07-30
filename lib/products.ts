@@ -423,6 +423,13 @@ export const products: Product[] = [
   { id: "mn-023", name: "Marathi Nath Grand", category: "Nose Rings", subcategory: "Marathi Nath", purity: "22K Gold", weight: "2.4g", price: 5740, description: "Traditional Marathi nath nosering with elegant design.", details: ["22K Gold", "Weight: 2.4g", "Marathi nath", "QR Verified"], images: ["/noserings/marathi-nath/mn23.jpeg"], badge: "Best Seller", inStock: true },
   { id: "mn-024", name: "Marathi Nath Queen", category: "Nose Rings", subcategory: "Marathi Nath", purity: "22K Gold", weight: "2.5g", price: 5860, description: "Traditional Marathi nath nosering with elegant design.", details: ["22K Gold", "Weight: 2.5g", "Marathi nath", "QR Verified"], images: ["/noserings/marathi-nath/mn24.jpeg"], badge: "Trending", inStock: true },
   { id: "mn-025", name: "Marathi Nath Opulent", category: "Nose Rings", subcategory: "Marathi Nath", purity: "22K Gold", weight: "2.6g", price: 5980, description: "Traditional Marathi nath nosering with elegant design.", details: ["22K Gold", "Weight: 2.6g", "Marathi nath", "QR Verified"], images: ["/noserings/marathi-nath/mn25.jpeg"], badge: "Premium", inStock: true },
+  { id: "tt-001", name: "Teen Taar Classic", category: "Nose Rings", subcategory: "Teen Taar", purity: "24K Gold", weight: "2.3g", price: 3400, description: "Teen taar nosering with classic three-wire design.", details: ["24K Gold", "Weight: 2.3g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt1.jpeg"], badge: "", inStock: true },
+  { id: "tt-002", name: "Teen Taar Designer", category: "Nose Rings", subcategory: "Teen Taar", purity: "22K Gold", weight: "2.5g", price: 4100, description: "Teen taar nosering with classic three-wire design.", details: ["22K Gold", "Weight: 2.5g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt2.jpeg"], badge: "New", inStock: true },
+  { id: "tt-003", name: "Teen Taar Premium", category: "Nose Rings", subcategory: "Teen Taar", purity: "22K Gold", weight: "2.8g", price: 5000, description: "Teen taar nosering with classic three-wire design.", details: ["22K Gold", "Weight: 2.8g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "tt-004", name: "Teen Taar Elegance", category: "Nose Rings", subcategory: "Teen Taar", purity: "22K Gold", weight: "2.4g", price: 3800, description: "Teen taar nosering with classic three-wire design.", details: ["22K Gold", "Weight: 2.4g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt4.jpeg"], badge: "", inStock: true },
+  { id: "tt-005", name: "Teen Taar Fancy", category: "Nose Rings", subcategory: "Teen Taar", purity: "24K Gold", weight: "2.6g", price: 4600, description: "Teen taar nosering with classic three-wire design.", details: ["24K Gold", "Weight: 2.6g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt5.jpeg"], badge: "Trending", inStock: true },
+  { id: "tt-006", name: "Teen Taar Royal", category: "Nose Rings", subcategory: "Teen Taar", purity: "22K Gold", weight: "2.4g", price: 4400, description: "Teen taar nosering with classic three-wire design.", details: ["22K Gold", "Weight: 2.4g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt6.jpeg"], badge: "Premium", inStock: true },
+  { id: "tt-007", name: "Teen Taar Pearl", category: "Nose Rings", subcategory: "Teen Taar", purity: "22K Gold", weight: "2.2g", price: 3600, description: "Teen taar nosering with classic three-wire design.", details: ["22K Gold", "Weight: 2.2g", "Teen taar", "QR Verified"], images: ["/noserings/teen-taar/tt7.jpeg"], badge: "", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -496,7 +503,7 @@ export const earStudsSubcategories = [
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
-  { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 160 },
+  { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 167 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 0 },
