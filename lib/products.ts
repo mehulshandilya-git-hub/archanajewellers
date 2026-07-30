@@ -506,6 +506,9 @@ export const products: Product[] = [
   { id: "blb-002", name: "Ball Bali Designer", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "3.0g", price: 3800, description: "Designer ball bali earrings with elegant detailing.", details: ["22K Gold", "Weight: 3.0g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb2.jpeg"], badge: "New", inStock: true },
   { id: "blb-003", name: "Ball Bali Premium", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "3.2g", price: 4500, description: "Premium ball bali earrings with superior craftsmanship.", details: ["22K Gold", "Weight: 3.2g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb3.jpeg"], badge: "Best Seller", inStock: true },
   { id: "blb-004", name: "Ball Bali Fancy", category: "Earrings", subcategory: "Ball Bali", purity: "22K Gold", weight: "2.9g", price: 3600, description: "Fancy ball bali earrings with stylish appeal.", details: ["22K Gold", "Weight: 2.9g", "Ball design", "QR Verified"], images: ["/earrings/ball-bali/bbb4.jpeg"], badge: "Trending", inStock: true },
+  { id: "klb-001", name: "Kundal Bali Classic", category: "Earrings", subcategory: "Kundal Bali", purity: "24K Gold", weight: "4.0g", price: 3800, description: "Classic kundal bali earrings with traditional grace.", details: ["24K Gold", "Weight: 4.0g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb1.jpeg"], badge: "", inStock: true },
+  { id: "klb-002", name: "Kundal Bali Designer", category: "Earrings", subcategory: "Kundal Bali", purity: "22K Gold", weight: "4.3g", price: 4600, description: "Designer kundal bali earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.3g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb2.jpeg"], badge: "New", inStock: true },
+  { id: "klb-003", name: "Kundal Bali Premium", category: "Earrings", subcategory: "Kundal Bali", purity: "22K Gold", weight: "4.5g", price: 5400, description: "Premium kundal bali earrings with superior finish.", details: ["22K Gold", "Weight: 4.5g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb3.jpeg"], badge: "Best Seller", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -578,7 +581,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 35 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 38 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
