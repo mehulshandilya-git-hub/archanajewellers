@@ -522,6 +522,11 @@ export const products: Product[] = [
   { id: "lb-005", name: "Lock Bali Fancy", category: "Earrings", subcategory: "Lock Bali", purity: "24K Gold", weight: "3.3g", price: 4200, description: "Fancy lock bali earrings with ornate touch.", details: ["24K Gold", "Weight: 3.3g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb5.jpeg"], badge: "Trending", inStock: true },
   { id: "lb-006", name: "Lock Bali Royal", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "3.4g", price: 4800, description: "Royal lock bali earrings with majestic look.", details: ["22K Gold", "Weight: 3.4g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb6.jpeg"], badge: "Premium", inStock: true },
   { id: "lb-007", name: "Lock Bali Crystal", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "2.9g", price: 3400, description: "Crystal lock bali earrings with brilliant shine.", details: ["22K Gold", "Weight: 2.9g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb7.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "rb-001", name: "Rajkot Bali Classic", category: "Earrings", subcategory: "Rajkot Bali", purity: "24K Gold", weight: "4.0g", price: 3500, description: "Classic rajkot bali earrings with traditional charm.", details: ["24K Gold", "Weight: 4.0g", "Rajkot design", "QR Verified"], images: ["/earrings/rajkot-bali/rb1.jpeg"], badge: "", inStock: true },
+  { id: "rb-002", name: "Rajkot Bali Designer", category: "Earrings", subcategory: "Rajkot Bali", purity: "22K Gold", weight: "4.3g", price: 4300, description: "Designer rajkot bali earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.3g", "Rajkot design", "QR Verified"], images: ["/earrings/rajkot-bali/rb2.jpeg"], badge: "New", inStock: true },
+  { id: "rb-003", name: "Rajkot Bali Premium", category: "Earrings", subcategory: "Rajkot Bali", purity: "22K Gold", weight: "4.5g", price: 5200, description: "Premium rajkot bali earrings with superior finish.", details: ["22K Gold", "Weight: 4.5g", "Rajkot design", "QR Verified"], images: ["/earrings/rajkot-bali/rb3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "rb-004", name: "Rajkot Bali Elegance", category: "Earrings", subcategory: "Rajkot Bali", purity: "22K Gold", weight: "4.1g", price: 3800, description: "Elegant rajkot bali earrings with graceful design.", details: ["22K Gold", "Weight: 4.1g", "Rajkot design", "QR Verified"], images: ["/earrings/rajkot-bali/rb4.jpeg"], badge: "", inStock: true },
+  { id: "rb-005", name: "Rajkot Bali Fancy", category: "Earrings", subcategory: "Rajkot Bali", purity: "24K Gold", weight: "4.4g", price: 4800, description: "Fancy rajkot bali earrings with ornate style.", details: ["24K Gold", "Weight: 4.4g", "Rajkot design", "QR Verified"], images: ["/earrings/rajkot-bali/rb5.jpeg"], badge: "Trending", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -594,7 +599,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 51 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 56 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
