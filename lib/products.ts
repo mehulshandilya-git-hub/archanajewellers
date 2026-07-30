@@ -469,6 +469,8 @@ export const products: Product[] = [
   { id: "shm-007", name: "Sania Hand Made Crystal", category: "Nose Rings", subcategory: "Sania Hand Made", purity: "24K Gold", weight: "2.2g", price: 3600, description: "Handcrafted sania nosering with exquisite detail.", details: ["24K Gold", "Weight: 2.2g", "Hand made", "QR Verified"], images: ["/noserings/sania-hand-made/sh7.jpeg"], badge: "", inStock: true },
   { id: "shm-008", name: "Sania Hand Made Diamond", category: "Nose Rings", subcategory: "Sania Hand Made", purity: "22K Gold", weight: "2.7g", price: 5500, description: "Handcrafted sania nosering with exquisite detail.", details: ["22K Gold", "Weight: 2.7g", "Hand made", "QR Verified"], images: ["/noserings/sania-hand-made/sh8.jpeg"], badge: "Premium", inStock: true },
   { id: "shm-009", name: "Sania Hand Made Glow", category: "Nose Rings", subcategory: "Sania Hand Made", purity: "22K Gold", weight: "2.1g", price: 4800, description: "Handcrafted sania nosering with exquisite detail.", details: ["22K Gold", "Weight: 2.1g", "Hand made", "QR Verified"], images: ["/noserings/sania-hand-made/sh9.jpeg"], badge: "New", inStock: true },
+  { id: "svc-001", name: "Sania V Cut Classic", category: "Nose Rings", subcategory: "Sania V cutting", purity: "24K Gold", weight: "2.3g", price: 3800, description: "Sania V cutting nosering with precision V-cut design.", details: ["24K Gold", "Weight: 2.3g", "V cutting", "QR Verified"], images: ["/noserings/sania-v-cutting/sv1.jpeg"], badge: "", inStock: true },
+  { id: "svc-002", name: "Sania V Cut Designer", category: "Nose Rings", subcategory: "Sania V cutting", purity: "22K Gold", weight: "2.5g", price: 4800, description: "Designer sania V cutting nosering with fine detailing.", details: ["22K Gold", "Weight: 2.5g", "V cutting", "QR Verified"], images: ["/noserings/sania-v-cutting/sv2.jpeg"], badge: "New", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -542,7 +544,7 @@ export const earStudsSubcategories = [
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
-  { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 206 },
+  { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 0 },
