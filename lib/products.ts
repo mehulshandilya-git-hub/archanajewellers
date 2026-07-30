@@ -284,7 +284,7 @@ export const nosepinSubcategories = [
 ];
 
 export const noseRingsSubcategories = [
-  { name: "Exclusive Chain Noserings", slug: "exclusive-chain-noserings", description: "Premium chain-style nose rings", image: "✦" },
+  { name: "Exclusive Noserings", slug: "exclusive-chain-noserings", description: "Premium chain-style nose rings", image: "✦" },
   { name: "Laxmi Nath", slug: "laxmi-nath", description: "Traditional Laxmi nath nose rings", image: "✦" },
   { name: "Sania Nose Ring- Zig Zag", slug: "sania-nose-ring-zig-zag", description: "Zig zag design sania nose rings", image: "✦" },
   { name: "Marathi Nath", slug: "marathi-nath", description: "Traditional Marathi-style nath", image: "✦" },
