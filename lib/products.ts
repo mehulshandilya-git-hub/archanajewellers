@@ -509,6 +509,9 @@ export const products: Product[] = [
   { id: "klb-001", name: "Kundal Bali Classic", category: "Earrings", subcategory: "Kundal Bali", purity: "24K Gold", weight: "4.0g", price: 3800, description: "Classic kundal bali earrings with traditional grace.", details: ["24K Gold", "Weight: 4.0g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb1.jpeg"], badge: "", inStock: true },
   { id: "klb-002", name: "Kundal Bali Designer", category: "Earrings", subcategory: "Kundal Bali", purity: "22K Gold", weight: "4.3g", price: 4600, description: "Designer kundal bali earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.3g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb2.jpeg"], badge: "New", inStock: true },
   { id: "klb-003", name: "Kundal Bali Premium", category: "Earrings", subcategory: "Kundal Bali", purity: "22K Gold", weight: "4.5g", price: 5400, description: "Premium kundal bali earrings with superior finish.", details: ["22K Gold", "Weight: 4.5g", "Kundal design", "QR Verified"], images: ["/earrings/kundal-bali/klb3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "nd-001", name: "New Design Classic", category: "Earrings", subcategory: "New Design", purity: "24K Gold", weight: "3.5g", price: 3500, description: "Classic new design earrings with contemporary style.", details: ["24K Gold", "Weight: 3.5g", "New design", "QR Verified"], images: ["/earrings/new-design/nd1.jpeg"], badge: "", inStock: true },
+  { id: "nd-002", name: "New Design Designer", category: "Earrings", subcategory: "New Design", purity: "22K Gold", weight: "3.8g", price: 4400, description: "Designer new design earrings with modern detailing.", details: ["22K Gold", "Weight: 3.8g", "New design", "QR Verified"], images: ["/earrings/new-design/nd2.jpeg"], badge: "New", inStock: true },
+  { id: "nd-003", name: "New Design Premium", category: "Earrings", subcategory: "New Design", purity: "22K Gold", weight: "4.0g", price: 5200, description: "Premium new design earrings with superior craftsmanship.", details: ["22K Gold", "Weight: 4.0g", "New design", "QR Verified"], images: ["/earrings/new-design/nd3.jpeg"], badge: "Best Seller", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -581,7 +584,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 38 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 41 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
