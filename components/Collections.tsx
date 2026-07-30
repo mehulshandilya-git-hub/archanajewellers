@@ -10,12 +10,13 @@ const collections = [
     title: "Nosepins",
     slug: getCategorySlug("Nosepins"),
     span: "md:col-span-2 md:row-span-2",
-    image: true,
+    image: "/nosepins/nosepins-category.jpeg",
   },
   {
     title: "Earrings",
     slug: getCategorySlug("Earrings"),
     span: "md:col-span-2",
+    image: "/earrings/earrings-category.jpeg",
   },
   {
     title: "Nose Rings",
@@ -65,7 +66,7 @@ function CollectionCard({
   gradient,
   index,
 }: {
-  item: (typeof collections)[0];
+  item: (typeof collections)[0] & { image?: string };
   gradient: string;
   index: number;
 }) {
@@ -73,7 +74,7 @@ function CollectionCard({
     <Link
       href={`/category/${item.slug}`}
       className={`relative group overflow-hidden rounded-sm ${item.span} min-h-[200px] md:min-h-[280px] block`}
-      style={item.image ? { backgroundImage: "url(/nosepins/nosepins-category.jpeg)", backgroundSize: "cover", backgroundPosition: "center" } : undefined}
+      style={item.image ? { backgroundImage: `url(${item.image})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
     >
       <div className={`absolute inset-0 bg-gradient-to-br ${gradient}`} />
       {!item.image && <div className="absolute inset-0 bg-secondary-bg/80" />}
