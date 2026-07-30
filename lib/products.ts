@@ -668,6 +668,8 @@ export const products: Product[] = [
   { id: "god-008", name: "God Pendant Gold", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.4g", price: 4200, description: "Gold god pendant with radiant finish.", details: ["22K Gold", "Weight: 3.4g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp8.jpeg"], badge: "", inStock: true },
   { id: "god-009", name: "God Pendant Luxe", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.7g", price: 5200, description: "Luxe god pendant with premium gold finish.", details: ["22K Gold", "Weight: 3.7g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp9.jpeg"], badge: "Premium", inStock: true },
   { id: "god-010", name: "God Pendant Heritage", category: "Pendant", subcategory: "God Pendant", purity: "24K Gold", weight: "3.8g", price: 5800, description: "Heritage god pendant with timeless appeal.", details: ["24K Gold", "Weight: 3.8g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp10.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "mng-001", name: "Mangalsutra Classic", category: "Pendant", subcategory: "Mangalsutra", purity: "24K Gold", weight: "4.0g", price: 3800, description: "Classic mangalsutra pendant with traditional design.", details: ["24K Gold", "Weight: 4.0g", "Mangalsutra", "QR Verified"], images: ["/pendant/mangalsutra/m1.jpeg"], badge: "", inStock: true },
+  { id: "mng-002", name: "Mangalsutra Designer", category: "Pendant", subcategory: "Mangalsutra", purity: "22K Gold", weight: "4.5g", price: 5200, description: "Designer mangalsutra pendant with intricate detailing.", details: ["22K Gold", "Weight: 4.5g", "Mangalsutra", "QR Verified"], images: ["/pendant/mangalsutra/m2.jpeg"], badge: "New", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -739,7 +741,7 @@ export const categories = [
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 67 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 49 },
-  { id: "pendant", name: "Pendant", slug: "pendant", count: 25 },
+  { id: "pendant", name: "Pendant", slug: "pendant", count: 27 },
   { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
 ];
 
