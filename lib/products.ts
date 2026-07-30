@@ -117,12 +117,19 @@ export const products: Product[] = [
   { id: "du-011", name: "Double U Grace", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.5g", price: 4600, description: "Graceful double U chain nosepin with elegant chain work.", details: ["22K Gold", "Weight: 2.5g", "Grace design", "QR Verified"], images: ["/nosepins/double-u-chain/du11.jpeg"], badge: "", inStock: true },
   { id: "du-012", name: "Double U Splendid", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.9g", price: 5800, description: "Splendid double U chain nosepin with magnificent design.", details: ["22K Gold", "Weight: 2.9g", "Splendid design", "QR Verified"], images: ["/nosepins/double-u-chain/du12.jpeg"], badge: "Premium", inStock: true },
   {
-    id: "np-008", name: "Plaster Gold Nosepin", category: "Nosepins", subcategory: "Plaster Nosepin",
-    purity: "18K Gold", weight: "1.8g", price: 12000,
-    description: "Lightweight plaster gold nosepin with a subtle finish, perfect for comfortable daily wear.",
-    details: ["18K Gold", "Weight: 1.8g", "Plaster design", "QR Verified", "Lightweight"],
-    images: [], badge: "Lightweight", inStock: true,
-  },
+    id: "pn-001", name: "Plaster Gold Light", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "1.8g", price: 3200, description: "Lightweight plaster nosepin perfect for daily comfort.", details: ["22K Gold", "Weight: 1.8g", "Plaster design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn1.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "pn-002", name: "Plaster Gold Classic", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.0g", price: 3800, description: "Classic plaster nosepin with subtle elegant finish.", details: ["22K Gold", "Weight: 2.0g", "Classic plaster", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn2.jpeg"], badge: "", inStock: true },
+  { id: "pn-003", name: "Plaster Gold Designer", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.2g", price: 4300, description: "Designer plaster nosepin with fine detailing.", details: ["22K Gold", "Weight: 2.2g", "Designer plaster", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn3.jpeg"], badge: "New", inStock: true },
+  { id: "pn-004", name: "Plaster Gold Elegance", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "24K Gold", weight: "1.9g", price: 3500, description: "Elegant plaster nosepin with premium gold finish.", details: ["24K Gold", "Weight: 1.9g", "Elegance design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn4.jpeg"], badge: "", inStock: true },
+  { id: "pn-005", name: "Plaster Gold Fancy", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.3g", price: 4700, description: "Fancy plaster nosepin with stylish design.", details: ["22K Gold", "Weight: 2.3g", "Fancy design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn5.jpeg"], badge: "Trending", inStock: true },
+  { id: "pn-006", name: "Plaster Gold Shine", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.1g", price: 3600, description: "Shining plaster nosepin with brilliant finish.", details: ["22K Gold", "Weight: 2.1g", "Shine design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn6.jpeg"], badge: "", inStock: true },
+  { id: "pn-007", name: "Plaster Gold Royal", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.4g", price: 5000, description: "Royal plaster nosepin with majestic detailing.", details: ["22K Gold", "Weight: 2.4g", "Royal design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn7.jpeg"], badge: "Premium", inStock: true },
+  { id: "pn-008", name: "Plaster Gold Pearl", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.0g", price: 3400, description: "Pearl finish plaster nosepin with delicate look.", details: ["22K Gold", "Weight: 2.0g", "Pearl design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn8.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "pn-009", name: "Plaster Gold Diamond", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "24K Gold", weight: "2.5g", price: 5200, description: "Diamond cut plaster nosepin with brilliant shine.", details: ["24K Gold", "Weight: 2.5g", "Diamond cut", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn9.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "pn-010", name: "Plaster Gold Star", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.2g", price: 4000, description: "Star plaster nosepin with stellar design.", details: ["22K Gold", "Weight: 2.2g", "Star design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn10.jpeg"], badge: "", inStock: true },
+  { id: "pn-011", name: "Plaster Gold Charm", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.6g", price: 5400, description: "Charming plaster nosepin with captivating style.", details: ["22K Gold", "Weight: 2.6g", "Charm design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn11.jpeg"], badge: "New", inStock: true },
+  { id: "pn-012", name: "Plaster Gold Crown", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.3g", price: 4500, description: "Crown plaster nosepin with regal detailing.", details: ["22K Gold", "Weight: 2.3g", "Crown design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn12.jpeg"], badge: "Trending", inStock: true },
+  { id: "pn-013", name: "Plaster Gold Luxe", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "24K Gold", weight: "2.7g", price: 5800, description: "Luxe plaster nosepin with premium craftsmanship.", details: ["24K Gold", "Weight: 2.7g", "Luxe design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn13.jpeg"], badge: "Premium", inStock: true },
   {
     id: "np-009", name: "Fancy Andar Chain Nosepin", category: "Nosepins", subcategory: "Fancy Andar Chain",
     purity: "22K Gold", weight: "3.8g", price: 27000,
@@ -291,7 +298,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 132 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 144 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
