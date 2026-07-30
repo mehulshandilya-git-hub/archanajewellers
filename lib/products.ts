@@ -194,13 +194,9 @@ export const products: Product[] = [
   { id: "cnp-016", name: "Gold Clip Glow", category: "Nosepins", subcategory: "Clip Nosepin", purity: "22K Gold", weight: "2.2g", price: 4000, description: "Glowing clip nosepin with radiant gold finish.", details: ["22K Gold", "Weight: 2.2g", "Clip-on", "QR Verified"], images: ["/nosepins/clip-nosepin/cnp16.jpeg"], badge: "", inStock: true },
   { id: "cnp-017", name: "Gold Clip Bliss", category: "Nosepins", subcategory: "Clip Nosepin", purity: "22K Gold", weight: "2.4g", price: 4500, description: "Blissful clip nosepin with elegant charm.", details: ["22K Gold", "Weight: 2.4g", "Clip-on", "QR Verified"], images: ["/nosepins/clip-nosepin/cnp17.jpeg"], badge: "New", inStock: true },
   { id: "cnp-018", name: "Gold Clip Divine", category: "Nosepins", subcategory: "Clip Nosepin", purity: "22K Gold", weight: "2.7g", price: 5400, description: "Divine clip nosepin with exquisite detailing.", details: ["22K Gold", "Weight: 2.7g", "Clip-on", "QR Verified"], images: ["/nosepins/clip-nosepin/cnp18.jpeg"], badge: "Premium", inStock: true },
-  {
-    id: "np-013", name: "A-1 Huid Goli Keel Nosepin", category: "Nosepins", subcategory: "A-1 Huid Goli Keel",
-    purity: "22K Gold", weight: "2.6g", price: 18000,
-    description: "Premium A-1 huid goli keel gold nosepin with a distinctive goli design, crafted for discerning customers.",
-    details: ["22K Gold", "Weight: 2.6g", "Goli design", "QR Verified", "Premium finish"],
-    images: [], badge: "Premium", inStock: true,
-  },
+  { id: "a1-001", name: "A-1 Gold Classic", category: "Nosepins", subcategory: "A-1 Huid Goli Keel", purity: "22K Gold", weight: "2.3g", price: 3800, description: "Classic A-1 huid nosepin with traditional goli design.", details: ["22K Gold", "Weight: 2.3g", "Goli design", "QR Verified"], images: ["/nosepins/a1-huid/a1-1.jpeg"], badge: "", inStock: true },
+  { id: "a1-002", name: "A-1 Gold Designer", category: "Nosepins", subcategory: "A-1 Huid Goli Keel", purity: "22K Gold", weight: "2.5g", price: 4600, description: "Designer A-1 huid nosepin with premium goli detailing.", details: ["22K Gold", "Weight: 2.5g", "Designer goli", "QR Verified"], images: ["/nosepins/a1-huid/a1-2.jpeg"], badge: "New", inStock: true },
+  { id: "a1-003", name: "A-1 Gold Premium", category: "Nosepins", subcategory: "A-1 Huid Goli Keel", purity: "24K Gold", weight: "2.6g", price: 5400, description: "Premium A-1 huid nosepin with superior gold and fine craft.", details: ["24K Gold", "Weight: 2.6g", "Premium goli", "QR Verified"], images: ["/nosepins/a1-huid/a1-3.jpeg"], badge: "Best Seller", inStock: true },
   { id: "es-001", name: "Royal Gold Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.3g", price: 3500, description: "Elegant royal gold nosepin with exclusive stone work.", details: ["22K Gold", "Weight: 2.3g", "Exclusive stone", "QR Verified"], images: ["/nosepins/exclusive-stone/a.jpeg"], badge: "New", inStock: true },
   { id: "es-002", name: "Crystal Designer Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.6g", price: 4200, description: "Beautiful crystal designer nosepin for everyday grace.", details: ["22K Gold", "Weight: 2.6g", "Crystal design", "QR Verified"], images: ["/nosepins/exclusive-stone/aa.jpeg"], badge: "Trending", inStock: true },
   { id: "es-003", name: "Diamond Finish Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.0g", price: 3800, description: "Diamond finish nosepin with a brilliant shine.", details: ["22K Gold", "Weight: 2.0g", "Diamond finish", "QR Verified"], images: ["/nosepins/exclusive-stone/b.jpeg"], badge: "", inStock: true },
@@ -279,7 +275,7 @@ export const nosepinSubcategories = [
   { name: "Die Nosepin", slug: "die-nosepin", description: "Precision die-made nosepins", image: "✦" },
   { name: "Bombay Ball Fancy", slug: "bombay-ball-fancy", description: "Distinctive ball design nosepins", image: "✦" },
   { name: "Clip Nosepin", slug: "clip-nosepin", description: "Clip-on nosepins for non-pierced wear", image: "✦" },
-  { name: "A-1 Huid Goli Keel", slug: "a-1-huid-goli-keel", description: "Premium goli design nosepins", image: "✦" },
+  { name: "A-1 Huid Goli Keel", slug: "a1-huid", description: "Premium goli design nosepins", image: "✦" },
 ];
 
 export const noseRingsSubcategories = [
