@@ -515,6 +515,13 @@ export const products: Product[] = [
   { id: "bfe-001", name: "Bombay Fancy Classic", category: "Earrings", subcategory: "Bombay Fancy", purity: "24K Gold", weight: "3.8g", price: 3600, description: "Classic bombay fancy earrings with elegant style.", details: ["24K Gold", "Weight: 3.8g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf1.jpeg"], badge: "", inStock: true },
   { id: "bfe-002", name: "Bombay Fancy Designer", category: "Earrings", subcategory: "Bombay Fancy", purity: "22K Gold", weight: "4.0g", price: 4500, description: "Designer bombay fancy earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.0g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf2.jpeg"], badge: "New", inStock: true },
   { id: "bfe-003", name: "Bombay Fancy Premium", category: "Earrings", subcategory: "Bombay Fancy", purity: "22K Gold", weight: "4.2g", price: 5400, description: "Premium bombay fancy earrings with superior finish.", details: ["22K Gold", "Weight: 4.2g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "lb-001", name: "Lock Bali Classic", category: "Earrings", subcategory: "Lock Bali", purity: "24K Gold", weight: "3.0g", price: 3200, description: "Classic lock bali earrings with secure design.", details: ["24K Gold", "Weight: 3.0g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb1.jpeg"], badge: "", inStock: true },
+  { id: "lb-002", name: "Lock Bali Designer", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "3.2g", price: 3800, description: "Designer lock bali earrings with elegant detailing.", details: ["22K Gold", "Weight: 3.2g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb2.jpeg"], badge: "New", inStock: true },
+  { id: "lb-003", name: "Lock Bali Premium", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "3.5g", price: 4600, description: "Premium lock bali earrings with superior finish.", details: ["22K Gold", "Weight: 3.5g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "lb-004", name: "Lock Bali Elegance", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "3.1g", price: 3500, description: "Elegant lock bali earrings with graceful style.", details: ["22K Gold", "Weight: 3.1g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb4.jpeg"], badge: "", inStock: true },
+  { id: "lb-005", name: "Lock Bali Fancy", category: "Earrings", subcategory: "Lock Bali", purity: "24K Gold", weight: "3.3g", price: 4200, description: "Fancy lock bali earrings with ornate touch.", details: ["24K Gold", "Weight: 3.3g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb5.jpeg"], badge: "Trending", inStock: true },
+  { id: "lb-006", name: "Lock Bali Royal", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "3.4g", price: 4800, description: "Royal lock bali earrings with majestic look.", details: ["22K Gold", "Weight: 3.4g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb6.jpeg"], badge: "Premium", inStock: true },
+  { id: "lb-007", name: "Lock Bali Crystal", category: "Earrings", subcategory: "Lock Bali", purity: "22K Gold", weight: "2.9g", price: 3400, description: "Crystal lock bali earrings with brilliant shine.", details: ["22K Gold", "Weight: 2.9g", "Lock design", "QR Verified"], images: ["/earrings/lock-bali/lb7.jpeg"], badge: "Lightweight", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -587,7 +594,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 44 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 51 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
