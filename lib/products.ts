@@ -571,12 +571,6 @@ export const earringSubcategories = [
   { name: "Rajkot Bali", slug: "rajkot-bali", description: "Rajkot-style bali earrings", image: "✦" },
 ];
 
-export const fancyTopSubcategories = [
-  { name: "Exclusive Tops", slug: "exclusive-tops", description: "Premium exclusive top designs", image: "✦" },
-  { name: "Designer Tops", slug: "designer-tops", description: "Designer-crafted fancy tops", image: "✦" },
-  { name: "Fancy Tops", slug: "fancy-tops-sub", description: "Trending fancy top styles", image: "✦" },
-];
-
 export const lightweightSubcategories = [
   { name: "Modern Designer Rings", slug: "modern-designer-rings", description: "Lightweight modern designer rings", image: "✦" },
   { name: "Pendant Designs", slug: "pendant-designs", description: "Lightweight pendant designs", image: "✦" },

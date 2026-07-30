@@ -12,7 +12,7 @@ import {
   nosepinSubcategories,
   noseRingsSubcategories,
   earringSubcategories,
-  fancyTopSubcategories,
+
   lightweightSubcategories,
   pendantSubcategories,
   ringSubcategories,
@@ -34,13 +34,12 @@ export default function CategoryPage() {
   const isNosepins = slug === "gold-nosepins";
   const isNoseRings = slug === "nose-rings";
   const isEarrings = slug === "earrings";
-  const isFancyTops = slug === "fancy-tops";
   const isLightweight = slug === "lightweight-jewellery";
   const isPendant = slug === "pendant";
   const isRings = slug === "rings";
   const isEarStuds = slug === "ear-studs-for-men";
-  const hasSubcategories = isNosepins || isNoseRings || isEarrings || isFancyTops || isLightweight || isPendant || isRings || isEarStuds;
-  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : isEarrings ? earringSubcategories : isFancyTops ? fancyTopSubcategories : isLightweight ? lightweightSubcategories : isPendant ? pendantSubcategories : isRings ? ringSubcategories : isEarStuds ? earStudsSubcategories : [];
+  const hasSubcategories = isNosepins || isNoseRings || isEarrings || isLightweight || isPendant || isRings || isEarStuds;
+  const subcategories = isNosepins ? nosepinSubcategories : isNoseRings ? noseRingsSubcategories : isEarrings ? earringSubcategories : isLightweight ? lightweightSubcategories : isPendant ? pendantSubcategories : isRings ? ringSubcategories : isEarStuds ? earStudsSubcategories : [];
   const filtered =
     hasSubcategories && activeSub
       ? getProductsBySubcategory(activeSub)
