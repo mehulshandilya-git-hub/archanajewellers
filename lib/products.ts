@@ -512,6 +512,9 @@ export const products: Product[] = [
   { id: "nd-001", name: "New Design Classic", category: "Earrings", subcategory: "New Design", purity: "24K Gold", weight: "3.5g", price: 3500, description: "Classic new design earrings with contemporary style.", details: ["24K Gold", "Weight: 3.5g", "New design", "QR Verified"], images: ["/earrings/new-design/nd1.jpeg"], badge: "", inStock: true },
   { id: "nd-002", name: "New Design Designer", category: "Earrings", subcategory: "New Design", purity: "22K Gold", weight: "3.8g", price: 4400, description: "Designer new design earrings with modern detailing.", details: ["22K Gold", "Weight: 3.8g", "New design", "QR Verified"], images: ["/earrings/new-design/nd2.jpeg"], badge: "New", inStock: true },
   { id: "nd-003", name: "New Design Premium", category: "Earrings", subcategory: "New Design", purity: "22K Gold", weight: "4.0g", price: 5200, description: "Premium new design earrings with superior craftsmanship.", details: ["22K Gold", "Weight: 4.0g", "New design", "QR Verified"], images: ["/earrings/new-design/nd3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "bfe-001", name: "Bombay Fancy Classic", category: "Earrings", subcategory: "Bombay Fancy", purity: "24K Gold", weight: "3.8g", price: 3600, description: "Classic bombay fancy earrings with elegant style.", details: ["24K Gold", "Weight: 3.8g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf1.jpeg"], badge: "", inStock: true },
+  { id: "bfe-002", name: "Bombay Fancy Designer", category: "Earrings", subcategory: "Bombay Fancy", purity: "22K Gold", weight: "4.0g", price: 4500, description: "Designer bombay fancy earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.0g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf2.jpeg"], badge: "New", inStock: true },
+  { id: "bfe-003", name: "Bombay Fancy Premium", category: "Earrings", subcategory: "Bombay Fancy", purity: "22K Gold", weight: "4.2g", price: 5400, description: "Premium bombay fancy earrings with superior finish.", details: ["22K Gold", "Weight: 4.2g", "Bombay fancy", "QR Verified"], images: ["/earrings/bombay-fancy/bf3.jpeg"], badge: "Best Seller", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -584,7 +587,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 41 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 44 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
