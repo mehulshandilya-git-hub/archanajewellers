@@ -481,6 +481,12 @@ export const products: Product[] = [
   { id: "dcb-008", name: "Die Chain Bali Diamond", category: "Earrings", subcategory: "Die Chain Bali", purity: "22K Gold", weight: "3.7g", price: 5500, description: "Diamond-cut die chain bali earrings with exceptional brilliance.", details: ["22K Gold", "Weight: 3.7g", "Die chain", "QR Verified"], images: ["/earrings/die-chain-bali/dc8.jpeg"], badge: "Premium", inStock: true },
   { id: "dcb-009", name: "Die Chain Bali Modern", category: "Earrings", subcategory: "Die Chain Bali", purity: "24K Gold", weight: "3.0g", price: 3200, description: "Modern die chain bali earrings with contemporary design.", details: ["24K Gold", "Weight: 3.0g", "Die chain", "QR Verified"], images: ["/earrings/die-chain-bali/dc9.jpeg"], badge: "Lightweight", inStock: true },
   { id: "dcb-010", name: "Die Chain Bali Glow", category: "Earrings", subcategory: "Die Chain Bali", purity: "22K Gold", weight: "3.5g", price: 4800, description: "Glowing die chain bali earrings with radiant finish.", details: ["22K Gold", "Weight: 3.5g", "Die chain", "QR Verified"], images: ["/earrings/die-chain-bali/dc10.jpeg"], badge: "New", inStock: true },
+  { id: "kb-001", name: "Kundan Bali Classic", category: "Earrings", subcategory: "Kundan Bali", purity: "24K Gold", weight: "4.2g", price: 3800, description: "Classic kundan bali earrings with traditional charm.", details: ["24K Gold", "Weight: 4.2g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb1.jpeg"], badge: "", inStock: true },
+  { id: "kb-002", name: "Kundan Bali Designer", category: "Earrings", subcategory: "Kundan Bali", purity: "22K Gold", weight: "4.5g", price: 4500, description: "Designer kundan bali earrings with intricate detailing.", details: ["22K Gold", "Weight: 4.5g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb2.jpeg"], badge: "New", inStock: true },
+  { id: "kb-003", name: "Kundan Bali Premium", category: "Earrings", subcategory: "Kundan Bali", purity: "22K Gold", weight: "4.8g", price: 5400, description: "Premium kundan bali earrings with superior finish.", details: ["22K Gold", "Weight: 4.8g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "kb-004", name: "Kundan Bali Elegance", category: "Earrings", subcategory: "Kundan Bali", purity: "22K Gold", weight: "4.3g", price: 4100, description: "Elegant kundan bali earrings with graceful design.", details: ["22K Gold", "Weight: 4.3g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb4.jpeg"], badge: "Trending", inStock: true },
+  { id: "kb-005", name: "Kundan Bali Royal", category: "Earrings", subcategory: "Kundan Bali", purity: "24K Gold", weight: "4.6g", price: 5200, description: "Royal kundan bali earrings with majestic presence.", details: ["24K Gold", "Weight: 4.6g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb5.jpeg"], badge: "Premium", inStock: true },
+  { id: "kb-006", name: "Kundan Bali Crystal", category: "Earrings", subcategory: "Kundan Bali", purity: "22K Gold", weight: "4.0g", price: 3500, description: "Crystal kundan bali earrings with brilliant shine.", details: ["22K Gold", "Weight: 4.0g", "Kundan work", "QR Verified"], images: ["/earrings/kundan-bali/kb6.jpeg"], badge: "Lightweight", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -553,7 +559,7 @@ export const earStudsSubcategories = [
 
 export const categories = [
   { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
-  { id: "earrings", name: "Earrings", slug: "earrings", count: 10 },
+  { id: "earrings", name: "Earrings", slug: "earrings", count: 16 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
