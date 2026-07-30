@@ -131,12 +131,10 @@ export const products: Product[] = [
   { id: "pn-012", name: "Plaster Gold Crown", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "22K Gold", weight: "2.3g", price: 4500, description: "Crown plaster nosepin with regal detailing.", details: ["22K Gold", "Weight: 2.3g", "Crown design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn12.jpeg"], badge: "Trending", inStock: true },
   { id: "pn-013", name: "Plaster Gold Luxe", category: "Nosepins", subcategory: "Plaster Nosepin", purity: "24K Gold", weight: "2.7g", price: 5800, description: "Luxe plaster nosepin with premium craftsmanship.", details: ["24K Gold", "Weight: 2.7g", "Luxe design", "QR Verified"], images: ["/nosepins/plaster-nosepin/pn13.jpeg"], badge: "Premium", inStock: true },
   {
-    id: "np-009", name: "Fancy Andar Chain Nosepin", category: "Nosepins", subcategory: "Fancy Andar Chain",
-    purity: "22K Gold", weight: "3.8g", price: 27000,
-    description: "Fancy andar chain gold nosepin with an internal chain mechanism, a unique and elegant design.",
-    details: ["22K Gold", "Weight: 3.8g", "Andar chain", "QR Verified", "Fancy design"],
-    images: [], badge: "Trending", inStock: true,
-  },
+    id: "fa-001", name: "Fancy Andar Chain Gold", category: "Nosepins", subcategory: "Fancy Andar Chain", purity: "22K Gold", weight: "2.0g", price: 3600, description: "Fancy andar chain nosepin with internal chain mechanism.", details: ["22K Gold", "Weight: 2.0g", "Andar chain", "QR Verified"], images: ["/nosepins/fancy-andar-chain/fa1.jpeg"], badge: "", inStock: true },
+  { id: "fa-002", name: "Fancy Andar Designer", category: "Nosepins", subcategory: "Fancy Andar Chain", purity: "22K Gold", weight: "2.3g", price: 4400, description: "Designer andar chain nosepin with stylish detailing.", details: ["22K Gold", "Weight: 2.3g", "Designer chain", "QR Verified"], images: ["/nosepins/fancy-andar-chain/fa2.jpeg"], badge: "New", inStock: true },
+  { id: "fa-003", name: "Fancy Andar Premium", category: "Nosepins", subcategory: "Fancy Andar Chain", purity: "24K Gold", weight: "2.5g", price: 5200, description: "Premium andar chain nosepin with superior craftsmanship.", details: ["24K Gold", "Weight: 2.5g", "Premium finish", "QR Verified"], images: ["/nosepins/fancy-andar-chain/fa3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "fa-004", name: "Fancy Andar Royal", category: "Nosepins", subcategory: "Fancy Andar Chain", purity: "22K Gold", weight: "2.7g", price: 5600, description: "Royal andar chain nosepin with majestic design.", details: ["22K Gold", "Weight: 2.7g", "Royal design", "QR Verified"], images: ["/nosepins/fancy-andar-chain/fa4.jpeg"], badge: "Trending", inStock: true },
   {
     id: "np-010", name: "Die Gold Nosepin", category: "Nosepins", subcategory: "Die Nosepin",
     purity: "22K Gold", weight: "2.2g", price: 13500,
@@ -298,7 +296,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 144 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
