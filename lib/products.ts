@@ -658,6 +658,16 @@ export const products: Product[] = [
   { id: "ps-013", name: "Pendant Set Star", category: "Pendant", subcategory: "Pendant Set", purity: "22K Gold", weight: "4.2g", price: 4800, description: "Stylish pendant set with premium gold finish.", details: ["22K Gold", "Weight: 4.2g", "Pendant set", "QR Verified"], images: ["/pendant/pendant-set/pc14.jpeg"], badge: "", inStock: true },
   { id: "ps-014", name: "Pendant Set Grace", category: "Pendant", subcategory: "Pendant Set", purity: "24K Gold", weight: "4.5g", price: 5200, description: "Stylish pendant set with premium gold finish.", details: ["24K Gold", "Weight: 4.5g", "Pendant set", "QR Verified"], images: ["/pendant/pendant-set/pc15.jpeg"], badge: "New", inStock: true },
   { id: "ps-015", name: "Pendant Set Heritage", category: "Pendant", subcategory: "Pendant Set", purity: "22K Gold", weight: "3.6g", price: 5600, description: "Stylish pendant set with premium gold finish.", details: ["22K Gold", "Weight: 3.6g", "Pendant set", "QR Verified"], images: ["/pendant/pendant-set/pc16.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "god-001", name: "God Pendant Classic", category: "Pendant", subcategory: "God Pendant", purity: "24K Gold", weight: "3.0g", price: 3200, description: "Classic god pendant with divine finish.", details: ["24K Gold", "Weight: 3.0g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp1.jpeg"], badge: "", inStock: true },
+  { id: "god-002", name: "God Pendant Designer", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.3g", price: 3800, description: "Designer god pendant with intricate detailing.", details: ["22K Gold", "Weight: 3.3g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp2.jpeg"], badge: "New", inStock: true },
+  { id: "god-003", name: "God Pendant Premium", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.6g", price: 4500, description: "Premium god pendant with superior craftsmanship.", details: ["22K Gold", "Weight: 3.6g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "god-004", name: "God Pendant Elegance", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.1g", price: 3500, description: "Elegant god pendant with graceful design.", details: ["22K Gold", "Weight: 3.1g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp4.jpeg"], badge: "", inStock: true },
+  { id: "god-005", name: "God Pendant Royal", category: "Pendant", subcategory: "God Pendant", purity: "24K Gold", weight: "3.5g", price: 4800, description: "Royal god pendant with majestic presence.", details: ["24K Gold", "Weight: 3.5g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp5.jpeg"], badge: "Trending", inStock: true },
+  { id: "god-006", name: "God Pendant Divine", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.2g", price: 4000, description: "Divine god pendant with blessed design.", details: ["22K Gold", "Weight: 3.2g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp6.jpeg"], badge: "Premium", inStock: true },
+  { id: "god-007", name: "God Pendant Crystal", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "2.8g", price: 3400, description: "Crystal god pendant with brilliant shine.", details: ["22K Gold", "Weight: 2.8g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp7.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "god-008", name: "God Pendant Gold", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.4g", price: 4200, description: "Gold god pendant with radiant finish.", details: ["22K Gold", "Weight: 3.4g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp8.jpeg"], badge: "", inStock: true },
+  { id: "god-009", name: "God Pendant Luxe", category: "Pendant", subcategory: "God Pendant", purity: "22K Gold", weight: "3.7g", price: 5200, description: "Luxe god pendant with premium gold finish.", details: ["22K Gold", "Weight: 3.7g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp9.jpeg"], badge: "Premium", inStock: true },
+  { id: "god-010", name: "God Pendant Heritage", category: "Pendant", subcategory: "God Pendant", purity: "24K Gold", weight: "3.8g", price: 5800, description: "Heritage god pendant with timeless appeal.", details: ["24K Gold", "Weight: 3.8g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp10.jpeg"], badge: "Best Seller", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -729,7 +739,7 @@ export const categories = [
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 67 },
   { id: "rings", name: "Rings", slug: "rings", count: 0 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 49 },
-  { id: "pendant", name: "Pendant", slug: "pendant", count: 15 },
+  { id: "pendant", name: "Pendant", slug: "pendant", count: 25 },
   { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
 ];
 
