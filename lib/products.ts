@@ -670,6 +670,15 @@ export const products: Product[] = [
   { id: "god-010", name: "God Pendant Heritage", category: "Pendant", subcategory: "God Pendant", purity: "24K Gold", weight: "3.8g", price: 5800, description: "Heritage god pendant with timeless appeal.", details: ["24K Gold", "Weight: 3.8g", "God pendant", "QR Verified"], images: ["/pendant/god-pendant/gp10.jpeg"], badge: "Best Seller", inStock: true },
   { id: "mng-001", name: "Mangalsutra Classic", category: "Pendant", subcategory: "Mangalsutra", purity: "24K Gold", weight: "4.0g", price: 3800, description: "Classic mangalsutra pendant with traditional design.", details: ["24K Gold", "Weight: 4.0g", "Mangalsutra", "QR Verified"], images: ["/pendant/mangalsutra/m1.jpeg"], badge: "", inStock: true },
   { id: "mng-002", name: "Mangalsutra Designer", category: "Pendant", subcategory: "Mangalsutra", purity: "22K Gold", weight: "4.5g", price: 5200, description: "Designer mangalsutra pendant with intricate detailing.", details: ["22K Gold", "Weight: 4.5g", "Mangalsutra", "QR Verified"], images: ["/pendant/mangalsutra/m2.jpeg"], badge: "New", inStock: true },
+  { id: "gr-001", name: "Gents Ring Classic", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.0g", price: 3500, description: "Classic gents ring with bold masculine design.", details: ["22K Gold", "Weight: 5.0g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr1.jpeg"], badge: "", inStock: true },
+  { id: "gr-002", name: "Gents Ring Designer", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.5g", price: 4200, description: "Designer gents ring with contemporary detailing.", details: ["22K Gold", "Weight: 5.5g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr2.jpeg"], badge: "New", inStock: true },
+  { id: "gr-003", name: "Gents Ring Premium", category: "Rings", subcategory: "Gents Ring", purity: "24K Gold", weight: "6.0g", price: 5200, description: "Premium gents ring with superior craftsmanship.", details: ["24K Gold", "Weight: 6.0g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr3.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "gr-004", name: "Gents Ring Elegance", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.2g", price: 3800, description: "Elegant gents ring with refined style.", details: ["22K Gold", "Weight: 5.2g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr4.jpeg"], badge: "", inStock: true },
+  { id: "gr-005", name: "Gents Ring Royal", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.8g", price: 4800, description: "Royal gents ring with majestic presence.", details: ["22K Gold", "Weight: 5.8g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr5.jpeg"], badge: "Trending", inStock: true },
+  { id: "gr-006", name: "Gents Ring Gold", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.3g", price: 4000, description: "Gold gents ring with radiant finish.", details: ["22K Gold", "Weight: 5.3g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr6.jpeg"], badge: "Premium", inStock: true },
+  { id: "gr-007", name: "Gents Ring Modern", category: "Rings", subcategory: "Gents Ring", purity: "24K Gold", weight: "4.8g", price: 3600, description: "Modern gents ring with sleek contemporary design.", details: ["24K Gold", "Weight: 4.8g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr7.jpeg"], badge: "Lightweight", inStock: true },
+  { id: "gr-008", name: "Gents Ring Diamond", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "5.6g", price: 5400, description: "Diamond gents ring with exceptional sparkle.", details: ["22K Gold", "Weight: 5.6g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr8.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "gr-009", name: "Gents Ring Heritage", category: "Rings", subcategory: "Gents Ring", purity: "22K Gold", weight: "6.2g", price: 5800, description: "Heritage gents ring with timeless appeal.", details: ["22K Gold", "Weight: 6.2g", "Gents ring", "QR Verified"], images: ["/rings/gents-ring/gr9.jpeg"], badge: "Trending", inStock: true },
 ];
 
 export const nosepinSubcategories = [
@@ -739,7 +748,7 @@ export const categories = [
   { id: "earrings", name: "Earrings", slug: "earrings", count: 56 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 67 },
-  { id: "rings", name: "Rings", slug: "rings", count: 0 },
+  { id: "rings", name: "Rings", slug: "rings", count: 9 },
   { id: "lightweight-jewellery", name: "Lightweight Jewellery", slug: "lightweight-jewellery", count: 49 },
   { id: "pendant", name: "Pendant", slug: "pendant", count: 27 },
   { id: "ear-studs-for-men", name: "Ear Studs for Men", slug: "ear-studs-for-men", count: 0 },
