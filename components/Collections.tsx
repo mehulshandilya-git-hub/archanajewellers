@@ -22,11 +22,13 @@ const collections = [
     title: "Nose Rings",
     slug: getCategorySlug("Nose Rings"),
     span: "",
+    image: "/nose-rings/nose-rings-category.jpeg",
   },
   {
     title: "Fancy Tops",
     slug: getCategorySlug("Fancy Tops"),
     span: "",
+    image: "/fancy-tops/fancy-tops-category.jpeg",
   },
   {
     title: "Rings",
