@@ -34,21 +34,25 @@ const collections = [
     title: "Rings",
     slug: getCategorySlug("Rings"),
     span: "",
+    image: "/rings/rings-category.jpeg",
   },
   {
     title: "Lightweight Jewellery",
     slug: getCategorySlug("Lightweight Jewellery"),
     span: "",
+    image: "/lightweight-jewellery/lightweight-jewellery-category.jpeg",
   },
   {
     title: "Pendant",
     slug: getCategorySlug("Pendant"),
     span: "",
+    image: "/pendant/pendant-category.jpeg",
   },
   {
     title: "Ear Studs for Men",
     slug: getCategorySlug("Ear Studs for Men"),
     span: "md:col-span-2",
+    image: "/ear-studs-for-men/ear-studs-for-men-category.jpeg",
   },
 ];
 
