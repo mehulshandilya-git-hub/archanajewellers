@@ -163,11 +163,18 @@ export const products: Product[] = [
   { id: "dn-025", name: "Die Gold Essence", category: "Nosepins", subcategory: "Die Nosepin", purity: "22K Gold", weight: "2.3g", price: 4400, description: "Essence die-made nosepin with pure elegance.", details: ["22K Gold", "Weight: 2.3g", "Essence die", "QR Verified"], images: ["/nosepins/die-nosepin/dn25.jpeg"], badge: "", inStock: true },
   { id: "dn-026", name: "Die Gold Infinity", category: "Nosepins", subcategory: "Die Nosepin", purity: "24K Gold", weight: "2.8g", price: 5800, description: "Infinity die-made nosepin with timeless appeal.", details: ["24K Gold", "Weight: 2.8g", "Infinity die", "QR Verified"], images: ["/nosepins/die-nosepin/dn26.jpeg"], badge: "Best Seller", inStock: true },
   {
-    id: "np-011", name: "Bombay Ball Fancy Nosepin", category: "Nosepins", subcategory: "Bombay Ball Fancy",
-    purity: "22K Gold", weight: "3.2g", price: 24000,
-    description: "Bombay ball fancy gold nosepin with a distinctive ball design, a favorite for festive occasions.",
-    details: ["22K Gold", "Weight: 3.2g", "Bombay ball design", "QR Verified", "Festival special"],
-    images: [], badge: "Festival Special", inStock: true,
+    id: "bb-001", name: "Bombay Ball Classic", category: "Nosepins", subcategory: "Bombay Ball Fancy",
+    purity: "22K Gold", weight: "2.5g", price: 4200,
+    description: "Classic Bombay ball nosepin with traditional ball design and fine gold finish.",
+    details: ["22K Gold", "Weight: 2.5g", "Ball design", "QR Verified", "Classic style"],
+    images: ["/nosepins/bombay-ball-fancy/bb1.jpeg"], badge: "Best Seller", inStock: true,
+  },
+  {
+    id: "bb-002", name: "Bombay Ball Designer", category: "Nosepins", subcategory: "Bombay Ball Fancy",
+    purity: "22K Gold", weight: "2.8g", price: 5500,
+    description: "Designer Bombay ball nosepin with intricate detailing and premium gold craft.",
+    details: ["22K Gold", "Weight: 2.8g", "Designer ball", "QR Verified", "Premium finish"],
+    images: ["/nosepins/bombay-ball-fancy/bb2.jpeg"], badge: "New", inStock: true,
   },
   {
     id: "np-012", name: "Clip Gold Nosepin", category: "Nosepins", subcategory: "Clip Nosepin",
