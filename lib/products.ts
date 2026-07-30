@@ -104,12 +104,18 @@ export const products: Product[] = [
   { id: "cw-022", name: "Chain Wali C25", category: "Nosepins", subcategory: "Chain Wali Keel", purity: "22K Gold", weight: "2.9g", price: 5600, description: "Premium chain wali nosepin with grand C25 design.", details: ["22K Gold", "Weight: 2.9g", "C25 design", "QR Verified"], images: ["/nosepins/chain-wali-keel/c25.jpeg"], badge: "Premium", inStock: true },
   { id: "cw-023", name: "Chain Wali C26", category: "Nosepins", subcategory: "Chain Wali Keel", purity: "22K Gold", weight: "2.7g", price: 5300, description: "Chain wali nosepin with exquisite C26 design.", details: ["22K Gold", "Weight: 2.7g", "C26 design", "QR Verified"], images: ["/nosepins/chain-wali-keel/c26.jpeg"], badge: "Trending", inStock: true },
   {
-    id: "np-007", name: "Double U Chain Nosepin", category: "Nosepins", subcategory: "Double U Chain",
-    purity: "22K Gold", weight: "4.0g", price: 28000,
-    description: "Double U chain gold nosepin with a unique dual-chain design, a statement piece for special occasions.",
-    details: ["22K Gold", "Weight: 4.0g", "Double U chain", "QR Verified", "Statement piece"],
-    images: [], badge: "Exclusive", inStock: true,
-  },
+    id: "du-001", name: "Double U Chain Gold", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.0g", price: 3500, description: "Elegant double U chain nosepin with unique dual-chain design.", details: ["22K Gold", "Weight: 2.0g", "Dual chain", "QR Verified"], images: ["/nosepins/double-u-chain/du1.jpeg"], badge: "", inStock: true },
+  { id: "du-002", name: "Double U Designer", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.3g", price: 4200, description: "Designer double U chain nosepin with intricate chain work.", details: ["22K Gold", "Weight: 2.3g", "Designer chain", "QR Verified"], images: ["/nosepins/double-u-chain/du2.jpeg"], badge: "New", inStock: true },
+  { id: "du-003", name: "Double U Classic", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.5g", price: 4800, description: "Classic double U chain nosepin for everyday elegance.", details: ["22K Gold", "Weight: 2.5g", "Classic chain", "QR Verified"], images: ["/nosepins/double-u-chain/du3.jpeg"], badge: "", inStock: true },
+  { id: "du-004", name: "Double U Gold Elite", category: "Nosepins", subcategory: "Double U Chain", purity: "24K Gold", weight: "2.1g", price: 3800, description: "Elite double U chain nosepin with premium gold finish.", details: ["24K Gold", "Weight: 2.1g", "Elite design", "QR Verified"], images: ["/nosepins/double-u-chain/du4.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "du-005", name: "Double U Diamond", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.7g", price: 5200, description: "Diamond finish double U chain nosepin with brilliant shine.", details: ["22K Gold", "Weight: 2.7g", "Diamond finish", "QR Verified"], images: ["/nosepins/double-u-chain/du5.jpeg"], badge: "Premium", inStock: true },
+  { id: "du-006", name: "Double U Fancy", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.2g", price: 3600, description: "Fancy double U chain nosepin with stylish detailing.", details: ["22K Gold", "Weight: 2.2g", "Fancy design", "QR Verified"], images: ["/nosepins/double-u-chain/du6.jpeg"], badge: "", inStock: true },
+  { id: "du-007", name: "Double U Royal", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.6g", price: 4900, description: "Royal double U chain nosepin with majestic chain work.", details: ["22K Gold", "Weight: 2.6g", "Royal design", "QR Verified"], images: ["/nosepins/double-u-chain/du7.jpeg"], badge: "Trending", inStock: true },
+  { id: "du-008", name: "Double U Luxe", category: "Nosepins", subcategory: "Double U Chain", purity: "24K Gold", weight: "2.4g", price: 4300, description: "Luxury double U chain nosepin with premium detailing.", details: ["24K Gold", "Weight: 2.4g", "Luxe design", "QR Verified"], images: ["/nosepins/double-u-chain/du8.jpeg"], badge: "", inStock: true },
+  { id: "du-009", name: "Double U Premium", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.8g", price: 5500, description: "Premium double U chain nosepin with superior craftsmanship.", details: ["22K Gold", "Weight: 2.8g", "Premium design", "QR Verified"], images: ["/nosepins/double-u-chain/du9.jpeg"], badge: "Best Seller", inStock: true },
+  { id: "du-010", name: "Double U Charm", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.3g", price: 3900, description: "Charming double U chain nosepin with captivating design.", details: ["22K Gold", "Weight: 2.3g", "Charm design", "QR Verified"], images: ["/nosepins/double-u-chain/du10.jpeg"], badge: "New", inStock: true },
+  { id: "du-011", name: "Double U Grace", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.5g", price: 4600, description: "Graceful double U chain nosepin with elegant chain work.", details: ["22K Gold", "Weight: 2.5g", "Grace design", "QR Verified"], images: ["/nosepins/double-u-chain/du11.jpeg"], badge: "", inStock: true },
+  { id: "du-012", name: "Double U Splendid", category: "Nosepins", subcategory: "Double U Chain", purity: "22K Gold", weight: "2.9g", price: 5800, description: "Splendid double U chain nosepin with magnificent design.", details: ["22K Gold", "Weight: 2.9g", "Splendid design", "QR Verified"], images: ["/nosepins/double-u-chain/du12.jpeg"], badge: "Premium", inStock: true },
   {
     id: "np-008", name: "Plaster Gold Nosepin", category: "Nosepins", subcategory: "Plaster Nosepin",
     purity: "18K Gold", weight: "1.8g", price: 12000,
@@ -285,7 +291,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 121 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 132 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 0 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 0 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 0 },
