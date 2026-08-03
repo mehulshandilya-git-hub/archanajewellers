@@ -255,7 +255,6 @@ export const products: Product[] = [
   { id: "es-052", name: "Crystal Clear Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.7g", price: 4800, description: "Crystal clear nosepin with transparent stone beauty.", details: ["22K Gold", "Weight: 2.7g", "Crystal clear", "QR Verified"], images: ["/nosepins/exclusive-stone/yy.jpeg"], badge: "", inStock: true },
   { id: "es-053", name: "Gold Serenity Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.4g", price: 3700, description: "Gold serenity nosepin with peaceful stone setting.", details: ["22K Gold", "Weight: 2.4g", "Serenity design", "QR Verified"], images: ["/nosepins/exclusive-stone/z.jpeg"], badge: "", inStock: true },
   { id: "es-054", name: "Infinity Gold Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "22K Gold", weight: "2.9g", price: 5500, description: "Infinity gold nosepin with timeless stone design.", details: ["22K Gold", "Weight: 2.9g", "Infinity design", "QR Verified"], images: ["/nosepins/exclusive-stone/zz.jpeg"], badge: "Best Seller", inStock: true },
-  { id: "es-055", name: "Authentic Stone Nosepin", category: "Nosepins", subcategory: "Exclusive Stone", purity: "24K Gold", weight: "2.6g", price: 4500, description: "Authentic stone nosepin with genuine gold finish.", details: ["24K Gold", "Weight: 2.6g", "Authentic design", "QR Verified"], images: ["/nosepins/exclusive-stone/bacnground.jpeg"], badge: "New", inStock: true },
   {
     id: "np-015", name: "Single Stone Diamond Nosepin", category: "Nosepins", subcategory: "Single Stone",
     purity: "18K Gold", weight: "2.4g", price: 32000,
@@ -744,7 +743,7 @@ export const earStudsSubcategories = [
 ];
 
 export const categories = [
-  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 147 },
+  { id: "gold-nosepins", name: "Nosepins", slug: "gold-nosepins", count: 146 },
   { id: "earrings", name: "Earrings", slug: "earrings", count: 56 },
   { id: "nose-rings", name: "Nose Rings", slug: "nose-rings", count: 208 },
   { id: "fancy-tops", name: "Fancy Tops", slug: "fancy-tops", count: 67 },
