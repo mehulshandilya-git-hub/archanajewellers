@@ -94,7 +94,7 @@ export default function Store() {
                   <a href="tel:+917541087346" className="hover:text-luxury-gold transition-colors">+91 75410 87346</a>
                 </p>
                 <div className="w-full h-[1px] bg-white/5" />
-                <p>🕐 Open Daily · Closes at 8 PM</p>
+                <p>🕐 Opens Monday to Saturday Timing - 11:30 to 8:00 pm</p>
               </div>
             </div>
 
