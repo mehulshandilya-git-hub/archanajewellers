@@ -91,7 +91,7 @@ export default function Store() {
                 <div className="w-full h-[1px] bg-white/5" />
                 <p className="flex items-center gap-2">
                   <span className="text-luxury-gold">✆</span>
-                  <a href="tel:+917827659049" className="hover:text-luxury-gold transition-colors">+91 78276 59049</a>
+                  <a href="tel:+917541087346" className="hover:text-luxury-gold transition-colors">+91 75410 87346</a>
                 </p>
                 <div className="w-full h-[1px] bg-white/5" />
                 <p>🕐 Open Daily · Closes at 8 PM</p>
@@ -100,7 +100,7 @@ export default function Store() {
 
             <div className="flex flex-col sm:flex-row gap-3">
               <MagneticButton
-                href="tel:+917827659049"
+                href="tel:+917541087346"
                 className="bg-luxury-gold text-primary-bg hover:shadow-[0_0_40px_rgba(212,175,55,0.3)]"
               >
                 Call Now

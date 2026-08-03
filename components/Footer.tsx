@@ -73,10 +73,18 @@ export default function Footer() {
               <li>Bhagalpur, Bihar 812001</li>
               <li>
                 <a
-                  href="tel:+917827659049"
+                  href="tel:+917541087346"
                   className="hover:text-luxury-gold transition-colors"
                 >
-                  +91 78276 59049
+                  +91 75410 87346
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:ajnkmllp@gmail.com"
+                  className="hover:text-luxury-gold transition-colors"
+                >
+                  ajnkmllp@gmail.com
                 </a>
               </li>
             </ul>
