@@ -2,38 +2,6 @@ import { Product } from "./types";
 
 export const products: Product[] = [
   {
-    id: "gp-010",
-    name: "Gold Ring Classic",
-    category: "Rings",
-    purity: "22K Gold",
-    weight: "4.8g",
-    price: 32000,
-    description: "Classic gold band ring with a subtle polish finish, an everyday essential for the modern individual.",
-    details: ["22K Yellow Gold", "Weight: 4.8g", "Classic design", "Comfort fit", "Hallmarked"],
-    images: [],
-    badge: "",
-    inStock: true,
-  },
-
-
-
-
-  // ── Nosepins Subcategory Products ──
-  {
-    id: "np-001", name: "Exclusive Stone Gold Nosepin", category: "Nosepins", subcategory: "Exclusive Stone",
-    purity: "22K Gold", weight: "2.8g", price: 22000,
-    description: "Premium gold nosepin with an exclusive stone setting, designed for those who appreciate fine craftsmanship.",
-    details: ["22K Gold", "Weight: 2.8g", "Exclusive stone", "QR Verified", "Hypoallergenic"],
-    images: [], badge: "Premium", inStock: true,
-  },
-  {
-    id: "np-002", name: "Single Stone Gold Nosepin", category: "Nosepins", subcategory: "Single Stone",
-    purity: "22K Gold", weight: "2.2g", price: 16000,
-    description: "Elegant single stone gold nosepin with a minimalist design, perfect for everyday elegance.",
-    details: ["22K Gold", "Weight: 2.2g", "Single stone", "QR Verified", "Daily wear"],
-    images: [], badge: "Best Seller", inStock: true,
-  },
-  {
     id: "tp-001", name: "Teen Patti Gold Classic", category: "Nosepins", subcategory: "Teen Patti",
     purity: "22K Gold", weight: "2.2g", price: 3500,
     description: "Classic teen patti gold nosepin with traditional three-leaf design.",

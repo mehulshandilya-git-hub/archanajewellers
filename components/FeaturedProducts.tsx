@@ -8,6 +8,8 @@ import { products, formatPrice } from "@/lib/products";
 import { useStore } from "@/lib/store";
 import { useToast } from "@/components/Toast";
 
+const featuredProductIds = ["es-004", "en-015", "dcb-001"];
+
 function ProductCard({ productId, index }: { productId: string; index: number }) {
   const product = products.find((p) => p.id === productId)!;
   const { addToCart, toggleWishlist, isInWishlist } = useStore();
@@ -133,9 +135,9 @@ export default function FeaturedProducts() {
         <div className="flex gap-6 overflow-x-auto pb-8 -mx-4 px-4 snap-x snap-mandatory"
           style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
         >
-          {products.slice(0, 6).map((product, index) => (
-            <div key={product.id} className="snap-start">
-              <ProductCard productId={product.id} index={index} />
+          {featuredProductIds.map((id, index) => (
+            <div key={id} className="snap-start">
+              <ProductCard productId={id} index={index} />
             </div>
           ))}
         </div>
