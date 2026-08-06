@@ -68,8 +68,7 @@ export default function Footer() {
               Contact
             </h4>
             <ul className="space-y-3 text-light-gray text-sm font-body font-light">
-              <li>DN Singh Rd, Near Devendra</li>
-              <li>Jalpan Hotel, Goshalla,</li>
+              <li>Near Chasma Xpress, DN Singh Road,</li>
               <li>Bhagalpur, Bihar 812001</li>
               <li>
                 <a
